@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # README – Mini-proyecto **MVC** en PHP
 
 > Material de acompañamiento para la clase
