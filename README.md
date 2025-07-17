@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README – Mini-proyecto **MVC** en PHP
 
 > Material de acompañamiento para la clase
@@ -213,3 +214,6 @@ Código liberado con fines **exclusivamente educativos**.
 Puedes modificar, compartir y reutilizarlo dentro de tu curso o proyecto citando la fuente.
 
 ---
+=======
+# MVC
+>>>>>>> a843b9cd4f9688f9e0032013aa586f689d2518c1
