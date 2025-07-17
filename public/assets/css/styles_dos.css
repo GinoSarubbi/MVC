@@ -1,0 +1,108 @@
+
+body {
+    background-color: #121212;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    color: white;
+    margin: 0;
+}
+
+nav ul li:hover {
+    color: #959697;
+}
+
+/* Contenedor del formulario */
+.login-container {
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+}
+
+/* Logo */
+.logo img {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #f1f1f1;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+p {
+    color: #a0a0a0;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #2a2a2a;
+    color: #f1f1f1;
+    font-size: 14px;
+}
+
+.input-field::placeholder {
+    color: #888;
+}
+
+/* Botón de login */
+.login-register-btn {
+    width: 100%;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-register-btn:hover {
+    background-color: #0056cc;
+    transform: scale(1.02);
+}
+
+/* Mensajes de error */
+.error-message {
+    color: #f44336;
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: left;
+    padding: 5px;
+    background-color: #2a2a2a;
+    border-radius: 5px;
+}
+.cnt-link{
+    display: flex;
+    justify-content: start;
+    margin-top: 10px;
+
+}
+
+.link-register{
+    justify-content: start;
+    color: #0763cc;
+}
+
+.register-container{
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 400px;
+}
+
+.registro-log{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}

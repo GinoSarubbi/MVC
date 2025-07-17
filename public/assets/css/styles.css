@@ -1,0 +1,48 @@
+/*modifico estilos de bootrap*/
+
+.h-10  { height: 10%  !important; }
+.h-15  { height: 15%  !important; }
+.h-20  { height: 20%  !important; }
+.h-85  { height: 85%  !important; }
+
+.bg-dark2 {
+    background-color: #121212 !important;
+}
+
+
+/* Estilos generales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#pingreso{
+    color: rgb(214, 214, 214) !important;
+}
+
+/* Ajustes de diseño responsivo */
+@media (max-width: 480px) {
+    .login-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .input-field {
+        font-size: 12px;
+    }
+
+    .login-register-btn {
+        font-size: 14px;
+    }
+}
+
