@@ -18,5 +18,9 @@
                 corregimos errores y escuchamos tus sugerencias. ¡Gracias por confiar en nosotros!
             </p>
         </div>
+         <ul class="d-flex list-unstyled gap-3">
+            <li><a href="?ruta=registro">Registro</a></li>
+            <li><a href="?ruta=ingreso">Ingreso</a></li>
+        </ul>
     </section>
 </div>

@@ -1,43 +1,117 @@
-<div class="container d-flex justify-content-center align-items-center vh-100">
-    <section>
-        <h1>Bienvenido al inicio</h1>
-        <p>Aqui vas a encontrar un mini ejemplo de lo que veras cuando inicies sesion</p>
-        <br />
-        <h2>Ejemplo de tabla con Usuarios</h2>
-        <table class="table table-dark table-hover text-center">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Nombre</th>
-                    <th>Email</th>
-                    <th>Fecha</th>
-                    <th>Acciones</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php
-                require_once "../app/modelos/usuario.php";
-                session_start();
+<?php
+require_once "app\modelos\usuario.php";
+session_start();
+if(!isset($_SESSION['usuario'])) {
+    header("Location: index.php?ruta=ingreso");
+    exit;
+}
 
-                if (!isset($_SESSION['usuarios'])) {
-                    $_SESSION['usuarios'] = [];
-                }
+?>
 
-                foreach ($_SESSION['usuarios'] as $index => $usuario) : ?>
-                <tr>
-                    <td><?php echo $index + 1; ?></td>
-                    <td><?php echo htmlspecialchars($usuario->getNombre()); ?></td>
-                    <td><?php echo htmlspecialchars($usuario->getEmail()); ?></td>
-                    <td><?php echo date('Y-m-d H:i:s'); ?></td>
-                    <td>    
-                        <form action="modelos/eliminar_usuario.php" method="POST" class="d-inline">
-                            <input type="hidden" name="id" value="<?php echo $index; ?>">
-                            <button type="submit" class="btn btn-danger">Eliminar</button>
-                    </td>
-                </tr>
-                <?php endforeach; ?>
+<head>
+    <style>
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+    }
 
-            </tbody>
-        </table>
-    </section>
-</div>
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+    .content {
+        margin-left: 250px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-content {
+        padding: 1rem;
+        overflow-y: auto;
+        flex: 1;
+    }
+
+
+    </style>
+</head>
+
+<nav class="sidebar bg-light border-end d-flex flex-column p-3">
+    <a href="#" class="d-flex align-items-center mb-4 text-decoration-none">
+        <span class="fs-4 ms-2 fw-bold">UserManager</span>
+    </a>
+    <ul class="nav nav-pills flex-column mb-auto" >
+        <li class="nav-item mb-1">
+            <a href="#" class="nav-link active" aria-current="page">
+                <i class="bi bi-house-door-fill me-2"></i> Inicio
+            </a>
+        </li>
+        <li class="nav-item mb-1">
+            <a href="#" class="nav-link link-dark">
+                <i class="bi bi-person-add me-2"></i> Agregar Usuario
+            </a>
+        </li>
+        <li class="nav-item mb-1">
+            <a href="#" class="nav-link link-dark">
+                <i class="bi bi-grid-fill me-2"></i> Productos
+            </a>
+        </li>
+    </ul>
+    <hr>
+</nav>
+
+<div class="content">
+
+    <header class="bg-light text-dark d-flex justify-content-between align-items-center p-3 border-bottom">
+
+        <span class="fs-4">Bienvenido, <strong><?php echo $_SESSION['usuario']->getNombre(); ?></strong></span>
+
+        <div class="dropdown mt-auto">
+            <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
+                id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-person" style="font-size: 2em;"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end text-small shadow" aria-labelledby="userDropdown">
+                <li><a class="dropdown-item" href="#">Perfil</a></li>
+                <li><a class="dropdown-item" href="#">Configuraciones</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="index.php?ruta=ingreso">Cerrar Sesion</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="main-content">
+        <div class="container mt-4">
+            <h1 class="mb-4">Panel de Usuarios</h1>
+            <p>Usuarios del sistema...</p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                    if (isset($_SESSION['usuarios'])) {
+                        foreach ($_SESSION['usuarios'] as $index => $usuario) {
+                            echo "<tr>
+                                    <th scope='row'>" . ($index + 1) . "</th>
+                                    <td>" . htmlspecialchars($usuario->getNombre()) . "</td>
+                                    <td>" . htmlspecialchars($usuario->getEmail()) . "</td>
+                                  </tr>";
+                        }
+                    } else {
+                        echo "<tr><td colspan='3'>No hay usuarios registrados.</td></tr>";
+                    }
+                    ?>
+                </tbody>
+
+        </div>

@@ -1,6 +1,6 @@
 <?php 
-require_once "../app/controladores/plantilla.controlador.php";
-require_once "../app/config/errors.php";
+require_once "./app/controladores/plantilla.controlador.php";
+require_once "./app/config/errors.php";
 
 
 //Instanciar el objeto 

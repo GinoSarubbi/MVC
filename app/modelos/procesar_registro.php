@@ -2,7 +2,7 @@
 session_start();
 require_once "usuario.php";
 
-$nombre   = $_POST['usuario']   ?? '';
+$nombre   = $_POST['nombre']   ?? '';
 $email    = $_POST['email']    ?? '';
 $password = $_POST['password'] ?? '';
 
@@ -11,5 +11,5 @@ $usuario->setPassword($password);
 
 $_SESSION['usuarios'][] = $usuario;
 
-header("Location: ../index.php?ruta=ingreso");
+header("Location: ../../index.php?ruta=ingreso");
 exit;

@@ -17,6 +17,10 @@
                         placeholder="Tu contraseña" required>
                 </div>
 
+                <div class="mb-3">
+                    <input type="genero" class="form-control" id="genero" name="genero"
+                        placeholder="Tu genero" required>
+                </div>
 
                 <div class="d-grid mb-3">
                     <button type="submit" class="btn btn-primary">Registrarse</button>

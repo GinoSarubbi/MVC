@@ -38,4 +38,8 @@ class Usuario
         $this->password = password_hash($password, PASSWORD_DEFAULT);
     }
 
+    public function verificarPassword(string $password)
+    {
+        return password_verify($password, $this->password);
+    }
 }
