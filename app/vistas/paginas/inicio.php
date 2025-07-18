@@ -36,8 +36,6 @@ if(!isset($_SESSION['usuario'])) {
         overflow-y: auto;
         flex: 1;
     }
-
-
     </style>
 </head>
 
@@ -45,7 +43,7 @@ if(!isset($_SESSION['usuario'])) {
     <a href="#" class="d-flex align-items-center mb-4 text-decoration-none">
         <span class="fs-4 ms-2 fw-bold">UserManager</span>
     </a>
-    <ul class="nav nav-pills flex-column mb-auto" >
+    <ul class="nav nav-pills flex-column mb-auto">
         <li class="nav-item mb-1">
             <a href="#" class="nav-link active" aria-current="page">
                 <i class="bi bi-house-door-fill me-2"></i> Inicio
@@ -69,7 +67,16 @@ if(!isset($_SESSION['usuario'])) {
 
     <header class="bg-light text-dark d-flex justify-content-between align-items-center p-3 border-bottom">
 
-        <span class="fs-4">Bienvenido, <strong><?php echo $_SESSION['usuario']->getNombre(); ?></strong></span>
+        <?php
+        if($_SESSION['usuario']->getGenero() === 'Masculino') {
+            echo '<h2 class="mb-0">Bienvenido, ' . htmlspecialchars($_SESSION['usuario']->getNombre()) . '!</h2>';
+        } else if($_SESSION['usuario']->getGenero() === 'Femenino') {
+            echo '<h2 class="mb-0">Bienvenida, ' . htmlspecialchars($_SESSION['usuario']->getNombre()) . '!</h2>';
+        } else {
+            echo '<h2 class="mb-0">Hola, ' . htmlspecialchars($_SESSION['usuario']->getNombre()) . '!</h2>';
+        }
+
+        ?>
 
         <div class="dropdown mt-auto">
             <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
@@ -96,6 +103,7 @@ if(!isset($_SESSION['usuario'])) {
                         <th scope="col">Id</th>
                         <th scope="col">Nombre</th>
                         <th scope="col">Email</th>
+                        <th scope="col">Género</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -106,6 +114,7 @@ if(!isset($_SESSION['usuario'])) {
                                     <th scope='row'>" . ($index + 1) . "</th>
                                     <td>" . htmlspecialchars($usuario->getNombre()) . "</td>
                                     <td>" . htmlspecialchars($usuario->getEmail()) . "</td>
+                                    <td>" . htmlspecialchars($usuario->getGenero()) . "</td>
                                   </tr>";
                         }
                     } else {

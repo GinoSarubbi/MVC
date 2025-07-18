@@ -4,12 +4,14 @@ class Usuario
     private  $nombre;
     private  $email;
     private  $password;
+    private  $genero;
 
-    public function __construct($nombre, $email, $password)
+    public function __construct($nombre, $email, $password, $genero = '')
     {
         $this->nombre = $nombre;
         $this->email = $email;
         $this->password = $password;
+        $this->genero = $genero;
     }
 
 
@@ -21,6 +23,16 @@ class Usuario
     public function getEmail()
     {
         return $this->email;
+    }
+
+    public function getGenero()
+    {
+        return $this->genero;
+    }
+
+    public function setGenero($genero)
+    {
+        $this->genero = $genero;
     }
 
     public function setNombre(string $nombre)
