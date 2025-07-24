@@ -1,49 +1,60 @@
 <?php
+
 require_once "app\modelos\usuario.php";
+
 session_start();
-if(!isset($_SESSION['usuario'])) {
-    header("Location: index.php?ruta=ingreso");
-    exit;
+
+if (!isset($_SESSION['validarIngreso'])) {
+   echo '<script>
+            window.location = "index.php?ruta=ingreso";
+       </script>';
+       return;
+} else if (!$_SESSION['validarIngreso'] != 'ok') {
+    echo '<script>
+            window.location = "index.php?ruta=ingreso";
+        </script>';
+        return;
 }
+
+
+$usuarios = ControladorFormularios::ctrSeleccionarRegistros(null, null);
 
 ?>
 
 <head>
     <style>
-    html,
-    body {
-        height: 100%;
-        margin: 0;
-    }
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
 
-    .sidebar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 250px;
-        height: 100vh;
-        overflow-y: auto;
-    }
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 100vh;
+            overflow-y: auto;
+        }
 
-    .content {
-        margin-left: 250px;
-        display: flex;
-        flex-direction: column;
-    }
+        .content {
+            display: flex;
+            flex-direction: column;
+        }
 
-    .main-content {
-        padding: 1rem;
-        overflow-y: auto;
-        flex: 1;
-    }
+        .main-content {
+            padding: 1rem;
+            overflow-y: auto;
+            flex: 1;
+        }
     </style>
 </head>
 
-<nav class="sidebar bg-light border-end d-flex flex-column p-3">
-    <a href="#" class="d-flex align-items-center mb-4 text-decoration-none">
-        <span class="fs-4 ms-2 fw-bold">UserManager</span>
-    </a>
+<nav class="sidebar bg-white border-end d-flex flex-column p-3 mt-5">
+
     <ul class="nav nav-pills flex-column mb-auto">
+        <h1 class="text-white">a</h1>
         <li class="nav-item mb-1">
             <a href="#" class="nav-link active" aria-current="page">
                 <i class="bi bi-house-door-fill me-2"></i> Inicio
@@ -65,15 +76,21 @@ if(!isset($_SESSION['usuario'])) {
 
 <div class="content">
 
-    <header class="bg-light text-dark d-flex justify-content-between align-items-center p-3 border-bottom">
+    <header class="bg-white text-dark d-flex justify-content-between align-items-center p-3 border-bottom z-3">
 
         <?php
-        if($_SESSION['usuario']->getGenero() === 'Masculino') {
-            echo '<h2 class="mb-0">Bienvenido, ' . htmlspecialchars($_SESSION['usuario']->getNombre()) . '!</h2>';
-        } else if($_SESSION['usuario']->getGenero() === 'Femenino') {
-            echo '<h2 class="mb-0">Bienvenida, ' . htmlspecialchars($_SESSION['usuario']->getNombre()) . '!</h2>';
+        if ($_SESSION['usuario']->getGenero() === 'Masculino') {
+            echo '<h3 class="mb-0 text-primary fw-bold">Bienvenido, '
+                . htmlspecialchars($_SESSION['usuario']->getNombre())
+                . '!</h3>';
+        } else if ($_SESSION['usuario']->getGenero() === 'Femenino') {
+            echo '<h3 class="mb-0 text-primary fw-bold">Bienvenida, ' 
+            . htmlspecialchars($_SESSION['usuario']->getNombre()) 
+            . '!</h3>';
         } else {
-            echo '<h2 class="mb-0">Hola, ' . htmlspecialchars($_SESSION['usuario']->getNombre()) . '!</h2>';
+            echo '<h3 class="mb-0 text-primary fw-bold">Hola, ' 
+            . htmlspecialchars($_SESSION['usuario']->getNombre()) 
+            . '!</h3>';
         }
 
         ?>

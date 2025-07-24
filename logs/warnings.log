@@ -619,3 +619,40 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in C:\xampp\htdocs\curso\php\index.php on line 5
+[23-Jul-2025 20:55:26 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ControladorFormularios" not found in C:\xampp\htdocs\curso\php\app\vistas\paginas\registro.php:39
+Stack trace:
+#0 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(22): include()
+#1 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\curso\php\index.php(10): ControladorPlantilla->ctrGetPlantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\registro.php on line 39
+[23-Jul-2025 20:55:34 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ControladorFormularios" not found in C:\xampp\htdocs\curso\php\app\vistas\paginas\registro.php:39
+Stack trace:
+#0 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(22): include()
+#1 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\curso\php\index.php(10): ControladorPlantilla->ctrGetPlantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\registro.php on line 39
+[23-Jul-2025 20:57:51 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ModeloFormularios" not found in C:\xampp\htdocs\curso\php\app\controladores\formularios.controlador.php:16
+Stack trace:
+#0 C:\xampp\htdocs\curso\php\app\vistas\paginas\registro.php(39): ControladorFormularios::ctrRegistro()
+#1 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(22): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\curso\php\index.php(11): ControladorPlantilla->ctrGetPlantilla()
+#4 {main}
+  thrown in C:\xampp\htdocs\curso\php\app\controladores\formularios.controlador.php on line 16
+[23-Jul-2025 20:58:00 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ModeloFormularios" not found in C:\xampp\htdocs\curso\php\app\controladores\formularios.controlador.php:16
+Stack trace:
+#0 C:\xampp\htdocs\curso\php\app\vistas\paginas\registro.php(39): ControladorFormularios::ctrRegistro()
+#1 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(22): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\curso\php\index.php(11): ControladorPlantilla->ctrGetPlantilla()
+#4 {main}
+  thrown in C:\xampp\htdocs\curso\php\app\controladores\formularios.controlador.php on line 16
+[23-Jul-2025 21:04:22 Europe/Berlin] PHP Notice:  Only variables should be passed by reference in C:\xampp\htdocs\curso\php\app\modelos\formularios.modelo.php on line 12
+[23-Jul-2025 21:04:34 Europe/Berlin] PHP Notice:  Only variables should be passed by reference in C:\xampp\htdocs\curso\php\app\modelos\formularios.modelo.php on line 12
+[23-Jul-2025 21:05:21 Europe/Berlin] PHP Notice:  Only variables should be passed by reference in C:\xampp\htdocs\curso\php\app\modelos\formularios.modelo.php on line 12
+[23-Jul-2025 21:05:28 Europe/Berlin] PHP Notice:  Only variables should be passed by reference in C:\xampp\htdocs\curso\php\app\modelos\formularios.modelo.php on line 12
+[23-Jul-2025 21:05:41 Europe/Berlin] PHP Notice:  Only variables should be passed by reference in C:\xampp\htdocs\curso\php\app\modelos\formularios.modelo.php on line 12
+[23-Jul-2025 21:49:11 Europe/Berlin] PHP Notice:  Only variables should be passed by reference in C:\xampp\htdocs\curso\php\app\modelos\formularios.modelo.php on line 12
+[25-Jul-2025 01:04:03 Europe/Berlin] PHP Notice:  Only variables should be passed by reference in C:\xampp\htdocs\curso\php\app\modelos\formularios.modelo.php on line 12

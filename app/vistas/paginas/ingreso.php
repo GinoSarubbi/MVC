@@ -4,7 +4,7 @@
             <h1 class="card-title text-center mb-3">Iniciar Sesión</h1>
             <p class="text-center text-muted mb-4" id="pingreso">Bienvenido! Por favor ingresa tus credenciales</p>
 
-            <form action="../../../curso/php/app/modelos/procesar_login.php" method="POST">
+            <form  method="POST">
                 <div class="mb-3">
                     <input type="email" class="form-control" id="email" name="email" placeholder="tucorreo@ejemplo.com"
                         required>
@@ -25,6 +25,10 @@
                 <div class="d-grid mb-3">
                     <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
                 </div>
+              <?php 
+              $ingreso = new ControladorFormularios();
+              $ingreso->ctrIngresoUsuario();
+                ?>
 
                 <p class="text-center mb-0">
                     ¿No tienes cuenta?

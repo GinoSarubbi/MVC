@@ -3,7 +3,7 @@
         <div class="card-body bg-dark2 text-light">
             <h1 class="card-title text-center mb-3">Registro</h1>
             <p class="text-center text-muted mb-4" id="pingreso">Por favor completa el formulario para registrarte</p>
-            <form action="../../../curso/php/app/modelos/procesar_registro.php" method="POST">
+            <form class="" method="POST">
           
                 <div class="row">
                     <div class="col-md-6 mb-3">
@@ -35,6 +35,9 @@
                 <div class="d-grid mb-3">
                     <button type="submit" class="btn btn-primary">Registrarse</button>
                 </div>
+                <?php
+                ControladorFormularios::ctrRegistro();
+                ?>
 
                 <p class="text-center mb-0">
                     ¿Ya tienes una cuenta?
