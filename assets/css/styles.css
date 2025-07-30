@@ -5,10 +5,10 @@
 .h-20  { height: 20%  !important; }
 .h-85  { height: 85%  !important; }
 
-.bg-dark2 {
-    background-color: #242424 !important;
-}
 
+@media (max-width: 576px) {
+  .fs-xs-1 { font-size: 2.5rem !important; }
+}
 
 /* Estilos generales */
 
@@ -19,7 +19,7 @@
 }
 
 #pingreso{
-    color: rgb(214, 214, 214) !important;
+    color: rgb(42, 42, 42) !important;
 }
 
 /* Ajustes de diseño responsivo */

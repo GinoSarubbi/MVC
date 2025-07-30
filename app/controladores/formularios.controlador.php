@@ -1,23 +1,31 @@
 <?php
-
 class ControladorFormularios
 {
     static public function ctrRegistro()
     {
-        if (isset($_POST["nombre"])) {
+        if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST["nombre"])) {
             $tabla = "registro";
-            $datos = array(
-                "nombre" => $_POST["nombre"],
-                "email" => $_POST["email"],
-                "password" => $_POST["contrasena"],
-                "genero" => $_POST["genero"]
-            );
+            $datos = [
+                "nombre"   => $_POST["nombre"],
+                "email"    => $_POST["email"],
+                "contrasena" => $_POST["contrasena"],
+                "genero"   => $_POST["genero"]
+            ];
 
             $respuesta = ModeloFormularios::mdlRegistro($tabla, $datos);
 
-           return $respuesta;
+            if ($respuesta === "existe") {
+                $_SESSION["error_message"] = "Ese email ya está registrado.";
+            }
+            if ($respuesta === "ok") {
+                // Redirige al login
+                header("Location: index.php?ruta=ingreso");
+                exit;
+            }
+            return $respuesta;
         }
     }
+
 
     static public function ctrSeleccionarRegistros($item, $valor)
     {
@@ -28,6 +36,9 @@ class ControladorFormularios
 
     static public function ctrIngresoUsuario()
     {
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            error_log("ctrIngresoUsuario se invocó. POST=" . print_r($_POST, true));
+        }
         if (isset($_POST["email"])) {
             $tabla = "registro";
             $item = "email";
@@ -35,25 +46,34 @@ class ControladorFormularios
 
             $respuesta = ModeloFormularios::mdlSeleccionarRegistros($tabla, $item, $valor);
 
-            if ($respuesta && password_verify($_POST["contrasena"], $respuesta["password"])) {
+            error_log("Intentando login con: " . $_POST["email"]);
+
+            if ($respuesta && isset($respuesta["contrasena"]) && password_verify($_POST["contrasena"], $respuesta["contrasena"])) {
+                error_log("LOGIN OK, redirigiendo");
                 $_SESSION["validarIngreso"] = true;
                 $_SESSION["usuario"] = $respuesta;
-
-                echo '<script>
-
-                if (window.history.replaceState) {
-                    window.history.replaceState(null, null, window.location.href);
-                }
-                    window.location = "index.php?ruta=inicio";
-                </script>';
-                return "ok";
-
+                 $_SESSION["genero"] = $respuesta["genero"];
+                header("Location: index.php?ruta=inicio");
+                exit;
             } else {
-                $_SESSION['error_message'] = 'Error: Usuario o contraseña incorrectos.';
-                echo '<script>
-                    window.location = "index.php?ruta=ingreso";
-                </script>';
-                return "error";
+                error_log("LOGIN FALLÓ");
+                $_SESSION["error_message"] = "Usuario o contraseña incorrectos.";
+                header("Location: index.php?ruta=ingreso");
+                exit;
+            }
+        }
+    }
+
+    static public function ctrEliminarUsuario()
+    {
+        if (isset($_GET["id"])) {
+            $id = $_GET["id"];
+            $respuesta = ModeloFormularios::eliminarPorId($id);
+            if ($respuesta) {
+                header("Location: index.php?ruta=inicio");
+                exit;
+            } else {
+                $_SESSION["error_message"] = "Error al eliminar el usuario.";
             }
         }
     }

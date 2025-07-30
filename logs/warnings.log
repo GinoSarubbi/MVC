@@ -1,658 +1,219 @@
-[17-Jul-2025 01:04:17 Europe/Berlin] Error [2]: include(paginas/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\vistas\plantilla.php on line 46
-[17-Jul-2025 01:04:17 Europe/Berlin] Error [2]: include(): Failed opening 'paginas/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\vistas\plantilla.php on line 46
-[17-Jul-2025 01:04:17 Europe/Berlin] Error [2]: include(paginas/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\vistas\plantilla.php on line 46
-[17-Jul-2025 01:04:17 Europe/Berlin] Error [2]: include(): Failed opening 'paginas/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\vistas\plantilla.php on line 46
-[17-Jul-2025 01:04:20 Europe/Berlin] Error [2]: include(paginas/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\vistas\plantilla.php on line 46
-[17-Jul-2025 01:04:20 Europe/Berlin] Error [2]: include(): Failed opening 'paginas/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\vistas\plantilla.php on line 46
-[17-Jul-2025 01:04:21 Europe/Berlin] Error [2]: include(paginas/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\vistas\plantilla.php on line 46
-[17-Jul-2025 01:04:21 Europe/Berlin] Error [2]: include(): Failed opening 'paginas/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\vistas\plantilla.php on line 46
-[17-Jul-2025 01:07:38 Europe/Berlin] Error [2]: include(paginas/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\vistas\plantilla.php on line 46
-[17-Jul-2025 01:07:38 Europe/Berlin] Error [2]: include(): Failed opening 'paginas/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\vistas\plantilla.php on line 46
-[17-Jul-2025 02:05:50 Europe/Berlin] [2025-07-17 02:05:50] Warning [2]: include(paginas/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 02:05:50 Europe/Berlin] [2025-07-17 02:05:50] Warning [2]: include(): Failed opening 'paginas/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 02:05:55 Europe/Berlin] [2025-07-17 02:05:55] Warning [2]: require_once(../../modelos/usuario.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 19
-
-[17-Jul-2025 02:05:55 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../modelos/usuario.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php:19
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(46): include()
-#1 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\public\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#3 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 19
-[17-Jul-2025 02:06:03 Europe/Berlin] [2025-07-17 02:06:03] Warning [2]: require_once(../../modelos/usuario.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 19
-
-[17-Jul-2025 02:06:03 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../modelos/usuario.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php:19
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(46): include()
-#1 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\public\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#3 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 19
-[17-Jul-2025 02:07:16 Europe/Berlin] [2025-07-17 02:07:16] Warning [2]: require_once(../../modelos/usuario.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 19
-
-[17-Jul-2025 02:07:16 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../modelos/usuario.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php:19
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(46): include()
-#1 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\public\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#3 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 19
-[17-Jul-2025 02:07:46 Europe/Berlin] [2025-07-17 02:07:46] Warning [2]: require_once(../../modelos/usuario.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 19
-
-[17-Jul-2025 02:07:46 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../modelos/usuario.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php:19
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(46): include()
-#1 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\public\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#3 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 19
-[17-Jul-2025 02:08:06 Europe/Berlin] [2025-07-17 02:08:06] Warning [2]: require_once(../../modelos/usuario.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 19
-
-[17-Jul-2025 02:08:06 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../modelos/usuario.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php:19
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(46): include()
-#1 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\public\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#3 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 19
-[17-Jul-2025 02:08:10 Europe/Berlin] [2025-07-17 02:08:10] Warning [2]: require_once(../../modelos/usuario.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 19
-
-[17-Jul-2025 02:08:10 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../modelos/usuario.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php:19
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(46): include()
-#1 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\public\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#3 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 19
-[17-Jul-2025 02:08:14 Europe/Berlin] [2025-07-17 02:08:14] Warning [2]: include(paginas/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 02:08:14 Europe/Berlin] [2025-07-17 02:08:14] Warning [2]: include(): Failed opening 'paginas/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 02:08:20 Europe/Berlin] [2025-07-17 02:08:20] Warning [2]: require_once(../../modelos/usuario.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 19
-
-[17-Jul-2025 02:08:20 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../modelos/usuario.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php:19
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(46): include()
-#1 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\public\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#3 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 19
-[17-Jul-2025 02:08:21 Europe/Berlin] [2025-07-17 02:08:21] Warning [2]: require_once(../../modelos/usuario.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 19
-
-[17-Jul-2025 02:08:21 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../modelos/usuario.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php:19
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(46): include()
-#1 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\public\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#3 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 19
-[17-Jul-2025 02:08:33 Europe/Berlin] [2025-07-17 02:08:33] Warning [2]: require_once(../../modelos/usuario.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 19
-
-[17-Jul-2025 02:08:33 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../modelos/usuario.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php:19
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(46): include()
-#1 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\public\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#3 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 19
-[17-Jul-2025 02:08:38 Europe/Berlin] [2025-07-17 02:08:38] Warning [2]: require_once(../../modelos/usuario.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 19
-
-[17-Jul-2025 02:08:38 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../modelos/usuario.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php:19
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(46): include()
-#1 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\public\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#3 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 19
-[17-Jul-2025 02:08:39 Europe/Berlin] [2025-07-17 02:08:39] Warning [2]: require_once(../../modelos/usuario.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 19
-
-[17-Jul-2025 02:08:39 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../modelos/usuario.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php:19
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(46): include()
-#1 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\public\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#3 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 19
-[17-Jul-2025 02:09:26 Europe/Berlin] [2025-07-17 02:09:26] Warning [2]: require_once(../../modelos/usuario.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 19
-
-[17-Jul-2025 02:09:26 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../modelos/usuario.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php:19
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(46): include()
-#1 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\public\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#3 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 19
-[17-Jul-2025 02:09:52 Europe/Berlin] [2025-07-17 02:09:52] Warning [2]: require_once(../../../app/modelos/usuario.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 19
-
-[17-Jul-2025 02:09:52 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../../app/modelos/usuario.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php:19
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(46): include()
-#1 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\public\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#3 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 19
-[17-Jul-2025 02:09:56 Europe/Berlin] [2025-07-17 02:09:56] Warning [2]: require_once(../../../app/modelos/usuario.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 19
-
-[17-Jul-2025 02:09:56 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../../app/modelos/usuario.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php:19
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(46): include()
-#1 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\public\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#3 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 19
-[17-Jul-2025 02:11:01 Europe/Berlin] [2025-07-17 02:11:01] Warning [2]: include(paginas/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 02:11:01 Europe/Berlin] [2025-07-17 02:11:01] Warning [2]: include(): Failed opening 'paginas/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 02:11:06 Europe/Berlin] [2025-07-17 02:11:06] Warning [2]: include(paginas/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 02:11:06 Europe/Berlin] [2025-07-17 02:11:06] Warning [2]: include(): Failed opening 'paginas/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 02:12:32 Europe/Berlin] PHP Warning:  Error de prueba in C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php on line 20
-[17-Jul-2025 02:12:33 Europe/Berlin] PHP Warning:  Error de prueba in C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php on line 20
-[17-Jul-2025 02:12:45 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: trigger_error(): Argument #2 ($error_level) must be one of E_USER_ERROR, E_USER_WARNING, E_USER_NOTICE, or E_USER_DEPRECATED in C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php:20
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php(20): trigger_error('Error de prueba', 2)
-#1 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(46): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#3 C:\xampp\htdocs\curso\php\public\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#4 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php on line 20
-[17-Jul-2025 02:12:47 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: trigger_error(): Argument #2 ($error_level) must be one of E_USER_ERROR, E_USER_WARNING, E_USER_NOTICE, or E_USER_DEPRECATED in C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php:20
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php(20): trigger_error('Error de prueba', 2)
-#1 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(46): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#3 C:\xampp\htdocs\curso\php\public\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#4 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php on line 20
-[17-Jul-2025 02:12:47 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: trigger_error(): Argument #2 ($error_level) must be one of E_USER_ERROR, E_USER_WARNING, E_USER_NOTICE, or E_USER_DEPRECATED in C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php:20
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php(20): trigger_error('Error de prueba', 2)
-#1 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(46): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#3 C:\xampp\htdocs\curso\php\public\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#4 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php on line 20
-[17-Jul-2025 02:12:47 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: trigger_error(): Argument #2 ($error_level) must be one of E_USER_ERROR, E_USER_WARNING, E_USER_NOTICE, or E_USER_DEPRECATED in C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php:20
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php(20): trigger_error('Error de prueba', 2)
-#1 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(46): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#3 C:\xampp\htdocs\curso\php\public\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#4 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php on line 20
-[17-Jul-2025 02:14:15 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: trigger_error(): Argument #2 ($error_level) must be one of E_USER_ERROR, E_USER_WARNING, E_USER_NOTICE, or E_USER_DEPRECATED in C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php:17
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php(17): trigger_error('Error de prueba', 2)
-#1 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(46): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#3 C:\xampp\htdocs\curso\php\public\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#4 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php on line 17
-[17-Jul-2025 02:14:15 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: trigger_error(): Argument #2 ($error_level) must be one of E_USER_ERROR, E_USER_WARNING, E_USER_NOTICE, or E_USER_DEPRECATED in C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php:17
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php(17): trigger_error('Error de prueba', 2)
-#1 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(46): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#3 C:\xampp\htdocs\curso\php\public\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#4 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php on line 17
-[17-Jul-2025 02:14:15 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: trigger_error(): Argument #2 ($error_level) must be one of E_USER_ERROR, E_USER_WARNING, E_USER_NOTICE, or E_USER_DEPRECATED in C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php:17
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php(17): trigger_error('Error de prueba', 2)
-#1 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(46): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#3 C:\xampp\htdocs\curso\php\public\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#4 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php on line 17
-[17-Jul-2025 02:15:26 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: trigger_error(): Argument #2 ($error_level) must be one of E_USER_ERROR, E_USER_WARNING, E_USER_NOTICE, or E_USER_DEPRECATED in C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php:18
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php(18): trigger_error('Error de prueba', 2)
-#1 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(46): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#3 C:\xampp\htdocs\curso\php\public\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#4 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php on line 18
-[17-Jul-2025 02:15:26 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: trigger_error(): Argument #2 ($error_level) must be one of E_USER_ERROR, E_USER_WARNING, E_USER_NOTICE, or E_USER_DEPRECATED in C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php:18
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php(18): trigger_error('Error de prueba', 2)
-#1 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(46): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#3 C:\xampp\htdocs\curso\php\public\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#4 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php on line 18
-[17-Jul-2025 02:15:26 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: trigger_error(): Argument #2 ($error_level) must be one of E_USER_ERROR, E_USER_WARNING, E_USER_NOTICE, or E_USER_DEPRECATED in C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php:18
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php(18): trigger_error('Error de prueba', 2)
-#1 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(46): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#3 C:\xampp\htdocs\curso\php\public\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#4 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php on line 18
-[17-Jul-2025 02:15:26 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: trigger_error(): Argument #2 ($error_level) must be one of E_USER_ERROR, E_USER_WARNING, E_USER_NOTICE, or E_USER_DEPRECATED in C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php:18
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php(18): trigger_error('Error de prueba', 2)
-#1 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(46): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#3 C:\xampp\htdocs\curso\php\public\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#4 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php on line 18
-[17-Jul-2025 02:15:37 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: trigger_error(): Argument #2 ($error_level) must be one of E_USER_ERROR, E_USER_WARNING, E_USER_NOTICE, or E_USER_DEPRECATED in C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php:21
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php(21): trigger_error('Error de prueba', 2)
-#1 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(46): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#3 C:\xampp\htdocs\curso\php\public\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#4 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php on line 21
-[17-Jul-2025 02:15:42 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: trigger_error(): Argument #2 ($error_level) must be one of E_USER_ERROR, E_USER_WARNING, E_USER_NOTICE, or E_USER_DEPRECATED in C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php:25
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php(25): trigger_error('Error de prueba', 2)
-#1 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(46): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#3 C:\xampp\htdocs\curso\php\public\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#4 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php on line 25
-[17-Jul-2025 02:15:43 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: trigger_error(): Argument #2 ($error_level) must be one of E_USER_ERROR, E_USER_WARNING, E_USER_NOTICE, or E_USER_DEPRECATED in C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php:25
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php(25): trigger_error('Error de prueba', 2)
-#1 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(46): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#3 C:\xampp\htdocs\curso\php\public\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#4 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php on line 25
-[17-Jul-2025 02:15:44 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: trigger_error(): Argument #2 ($error_level) must be one of E_USER_ERROR, E_USER_WARNING, E_USER_NOTICE, or E_USER_DEPRECATED in C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php:25
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php(25): trigger_error('Error de prueba', 2)
-#1 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(46): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#3 C:\xampp\htdocs\curso\php\public\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#4 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php on line 25
-[17-Jul-2025 02:15:44 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: trigger_error(): Argument #2 ($error_level) must be one of E_USER_ERROR, E_USER_WARNING, E_USER_NOTICE, or E_USER_DEPRECATED in C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php:25
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php(25): trigger_error('Error de prueba', 2)
-#1 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(46): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#3 C:\xampp\htdocs\curso\php\public\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#4 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\ingreso.php on line 25
-[17-Jul-2025 02:16:09 Europe/Berlin] [2025-07-17 02:16:09] Warning [2]: include(paginas/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 02:16:09 Europe/Berlin] [2025-07-17 02:16:09] Warning [2]: include(): Failed opening 'paginas/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 02:21:29 Europe/Berlin] [2025-07-17 02:21:29] Warning [2]: include(../app/vistas/ingreso.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
-
-[17-Jul-2025 02:21:29 Europe/Berlin] [2025-07-17 02:21:29] Warning [2]: include(): Failed opening '../app/vistas/ingreso.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
-
-[17-Jul-2025 02:21:39 Europe/Berlin] [2025-07-17 02:21:39] Warning [2]: include(../app/vistas/ingreso.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
-
-[17-Jul-2025 02:21:39 Europe/Berlin] [2025-07-17 02:21:39] Warning [2]: include(): Failed opening '../app/vistas/ingreso.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
-
-[17-Jul-2025 02:24:09 Europe/Berlin] [2025-07-17 02:24:09] Warning [2]: include(paginas/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 02:24:09 Europe/Berlin] [2025-07-17 02:24:09] Warning [2]: include(): Failed opening 'paginas/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 02:33:14 Europe/Berlin] [2025-07-17 02:33:14] Warning [2]: include(paginas/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 02:33:14 Europe/Berlin] [2025-07-17 02:33:14] Warning [2]: include(): Failed opening 'paginas/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 02:40:28 Europe/Berlin] [2025-07-17 02:40:28] Warning [2]: include(paginas/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 02:40:28 Europe/Berlin] [2025-07-17 02:40:28] Warning [2]: include(): Failed opening 'paginas/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 02:55:28 Europe/Berlin] [2025-07-17 02:55:28] Warning [2]: include(paginas/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 02:55:28 Europe/Berlin] [2025-07-17 02:55:28] Warning [2]: include(): Failed opening 'paginas/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 02:55:36 Europe/Berlin] [2025-07-17 02:55:36] Warning [2]: include(paginas/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 02:55:36 Europe/Berlin] [2025-07-17 02:55:36] Warning [2]: include(): Failed opening 'paginas/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 02:55:40 Europe/Berlin] [2025-07-17 02:55:40] Warning [2]: include(paginas/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 02:55:40 Europe/Berlin] [2025-07-17 02:55:40] Warning [2]: include(): Failed opening 'paginas/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 02:55:43 Europe/Berlin] [2025-07-17 02:55:43] Warning [2]: include(paginas/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 02:55:43 Europe/Berlin] [2025-07-17 02:55:43] Warning [2]: include(): Failed opening 'paginas/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 02:55:55 Europe/Berlin] [2025-07-17 02:55:55] Warning [2]: include(paginas/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 02:55:55 Europe/Berlin] [2025-07-17 02:55:55] Warning [2]: include(): Failed opening 'paginas/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 02:55:59 Europe/Berlin] [2025-07-17 02:55:59] Warning [2]: include(paginas/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 02:55:59 Europe/Berlin] [2025-07-17 02:55:59] Warning [2]: include(): Failed opening 'paginas/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 03:40:25 Europe/Berlin] [2025-07-17 03:40:25] Warning [2]: include(paginas/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 03:40:25 Europe/Berlin] [2025-07-17 03:40:25] Warning [2]: include(): Failed opening 'paginas/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 03:43:47 Europe/Berlin] [2025-07-17 03:43:47] Warning [2]: include(paginas/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 03:43:47 Europe/Berlin] [2025-07-17 03:43:47] Warning [2]: include(): Failed opening 'paginas/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 03:43:58 Europe/Berlin] [2025-07-17 03:43:58] Warning [2]: include(paginas/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 03:43:58 Europe/Berlin] [2025-07-17 03:43:58] Warning [2]: include(): Failed opening 'paginas/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 03:45:15 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "{", expecting "(" in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 47
-[17-Jul-2025 03:45:16 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "{", expecting "(" in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 47
-[17-Jul-2025 03:46:28 Europe/Berlin] [2025-07-17 03:46:28] Warning [2]: include(paginas/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 03:46:28 Europe/Berlin] [2025-07-17 03:46:28] Warning [2]: include(): Failed opening 'paginas/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 17:31:28 Europe/Berlin] [2025-07-17 17:31:28] Warning [2]: include(paginas/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 17:31:28 Europe/Berlin] [2025-07-17 17:31:28] Warning [2]: include(): Failed opening 'paginas/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 17:55:29 Europe/Berlin] [2025-07-17 17:55:29] Warning [2]: include(paginas/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 17:55:29 Europe/Berlin] [2025-07-17 17:55:29] Warning [2]: include(): Failed opening 'paginas/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 17:55:30 Europe/Berlin] [2025-07-17 17:55:30] Warning [2]: include(paginas/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 17:55:30 Europe/Berlin] [2025-07-17 17:55:30] Warning [2]: include(): Failed opening 'paginas/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 17:55:33 Europe/Berlin] [2025-07-17 17:55:33] Warning [2]: include(paginas/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 17:55:33 Europe/Berlin] [2025-07-17 17:55:33] Warning [2]: include(): Failed opening 'paginas/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 17:59:50 Europe/Berlin] [2025-07-17 17:59:50] Warning [2]: include(paginas/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 17:59:50 Europe/Berlin] [2025-07-17 17:59:50] Warning [2]: include(): Failed opening 'paginas/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 18:06:14 Europe/Berlin] [2025-07-17 18:06:14] Warning [2]: include(paginas/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[17-Jul-2025 18:06:14 Europe/Berlin] [2025-07-17 18:06:14] Warning [2]: include(): Failed opening 'paginas/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[18-Jul-2025 00:07:14 Europe/Berlin] [2025-07-18 00:07:14] Warning [2]: include(paginas/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[18-Jul-2025 00:07:14 Europe/Berlin] [2025-07-18 00:07:14] Warning [2]: include(): Failed opening 'paginas/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[18-Jul-2025 00:08:20 Europe/Berlin] [2025-07-18 00:08:20] Warning [2]: include(paginas/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[18-Jul-2025 00:08:20 Europe/Berlin] [2025-07-18 00:08:20] Warning [2]: include(): Failed opening 'paginas/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[18-Jul-2025 00:52:47 Europe/Berlin] [2025-07-18 00:52:47] Warning [2]: include(paginas/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[18-Jul-2025 00:52:47 Europe/Berlin] [2025-07-18 00:52:47] Warning [2]: include(): Failed opening 'paginas/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[18-Jul-2025 00:58:24 Europe/Berlin] [2025-07-18 00:58:24] Warning [2]: include(paginas/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[18-Jul-2025 00:58:24 Europe/Berlin] [2025-07-18 00:58:24] Warning [2]: include(): Failed opening 'paginas/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 46
-
-[18-Jul-2025 01:12:30 Europe/Berlin] [2025-07-18 01:12:30] Warning [2]: include(paginas/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 24
-
-[18-Jul-2025 01:12:30 Europe/Berlin] [2025-07-18 01:12:30] Warning [2]: include(): Failed opening 'paginas/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 24
-
-[18-Jul-2025 01:21:26 Europe/Berlin] [2025-07-18 01:21:26] Warning [2]: include(paginas/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 24
-
-[18-Jul-2025 01:21:26 Europe/Berlin] [2025-07-18 01:21:26] Warning [2]: include(): Failed opening 'paginas/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 24
-
-[18-Jul-2025 01:34:22 Europe/Berlin] [2025-07-18 01:34:22] Warning [2]: include(../app/vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
-
-[18-Jul-2025 01:34:22 Europe/Berlin] [2025-07-18 01:34:22] Warning [2]: include(): Failed opening '../app/vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
-
-[18-Jul-2025 01:34:35 Europe/Berlin] [2025-07-18 01:34:35] Warning [2]: include(../app/vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
-
-[18-Jul-2025 01:34:35 Europe/Berlin] [2025-07-18 01:34:35] Warning [2]: include(): Failed opening '../app/vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
-
-[18-Jul-2025 01:34:37 Europe/Berlin] [2025-07-18 01:34:37] Warning [2]: include(../app/vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
-
-[18-Jul-2025 01:34:37 Europe/Berlin] [2025-07-18 01:34:37] Warning [2]: include(): Failed opening '../app/vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
-
-[18-Jul-2025 01:34:51 Europe/Berlin] [2025-07-18 01:34:51] Warning [2]: include(../app/vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
-
-[18-Jul-2025 01:34:51 Europe/Berlin] [2025-07-18 01:34:51] Warning [2]: include(): Failed opening '../app/vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
-
-[18-Jul-2025 01:35:36 Europe/Berlin] [2025-07-18 01:35:36] Warning [2]: include(../app/vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
-
-[18-Jul-2025 01:35:36 Europe/Berlin] [2025-07-18 01:35:36] Warning [2]: include(): Failed opening '../app/vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
-
-[18-Jul-2025 01:36:09 Europe/Berlin] [2025-07-18 01:36:09] Warning [2]: include(../app/vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
-
-[18-Jul-2025 01:36:09 Europe/Berlin] [2025-07-18 01:36:09] Warning [2]: include(): Failed opening '../app/vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
-
-[18-Jul-2025 01:36:10 Europe/Berlin] [2025-07-18 01:36:10] Warning [2]: include(../app/vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
-
-[18-Jul-2025 01:36:10 Europe/Berlin] [2025-07-18 01:36:10] Warning [2]: include(): Failed opening '../app/vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
-
-[18-Jul-2025 01:36:11 Europe/Berlin] [2025-07-18 01:36:11] Warning [2]: include(../app/vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
-
-[18-Jul-2025 01:36:11 Europe/Berlin] [2025-07-18 01:36:11] Warning [2]: include(): Failed opening '../app/vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
-
-[18-Jul-2025 01:36:11 Europe/Berlin] [2025-07-18 01:36:11] Warning [2]: include(../app/vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
-
-[18-Jul-2025 01:36:11 Europe/Berlin] [2025-07-18 01:36:11] Warning [2]: include(): Failed opening '../app/vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
-
-[18-Jul-2025 01:36:11 Europe/Berlin] [2025-07-18 01:36:11] Warning [2]: include(../app/vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
-
-[18-Jul-2025 01:36:11 Europe/Berlin] [2025-07-18 01:36:11] Warning [2]: include(): Failed opening '../app/vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
-
-[18-Jul-2025 01:36:11 Europe/Berlin] [2025-07-18 01:36:11] Warning [2]: include(../app/vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
-
-[18-Jul-2025 01:36:11 Europe/Berlin] [2025-07-18 01:36:11] Warning [2]: include(): Failed opening '../app/vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
-
-[18-Jul-2025 01:36:11 Europe/Berlin] [2025-07-18 01:36:11] Warning [2]: include(../app/vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
-
-[18-Jul-2025 01:36:11 Europe/Berlin] [2025-07-18 01:36:11] Warning [2]: include(): Failed opening '../app/vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
-
-[18-Jul-2025 01:37:46 Europe/Berlin] [2025-07-18 01:37:46] Warning [2]: include(../app/vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
-
-[18-Jul-2025 01:37:46 Europe/Berlin] [2025-07-18 01:37:46] Warning [2]: include(): Failed opening '../app/vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
-
-[18-Jul-2025 01:37:50 Europe/Berlin] [2025-07-18 01:37:50] Warning [2]: include(../app/vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
-
-[18-Jul-2025 01:37:50 Europe/Berlin] [2025-07-18 01:37:50] Warning [2]: include(): Failed opening '../app/vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
-
-[18-Jul-2025 01:39:14 Europe/Berlin] [2025-07-18 01:39:14] Warning [2]: include(paginas/salir.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 47
-
-[18-Jul-2025 01:39:14 Europe/Berlin] [2025-07-18 01:39:14] Warning [2]: include(): Failed opening 'paginas/salir.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\plantilla.php on line 47
-
-[18-Jul-2025 02:01:57 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class __PHP_Incomplete_Class could not be converted to string in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php:72
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(47): include()
-#1 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#3 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 72
-[18-Jul-2025 02:02:25 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class __PHP_Incomplete_Class could not be converted to string in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php:73
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(22): include()
-#1 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#3 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 73
-[18-Jul-2025 02:02:50 Europe/Berlin] PHP Fatal error:  Uncaught Error: The script tried to call a method on an incomplete object. Please ensure that the class definition "Usuario" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php:73
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(22): include()
-#1 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#3 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 73
-[18-Jul-2025 02:03:18 Europe/Berlin] [2025-07-18 02:03:18] Warning [2]: require_once(usuario.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 2
-
-[18-Jul-2025 02:03:18 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'usuario.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php:2
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(22): include()
-#1 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#3 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 2
-[18-Jul-2025 02:03:19 Europe/Berlin] [2025-07-18 02:03:19] Warning [2]: require_once(usuario.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 2
-
-[18-Jul-2025 02:03:19 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'usuario.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php:2
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(22): include()
-#1 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#3 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 2
-[18-Jul-2025 02:03:19 Europe/Berlin] [2025-07-18 02:03:19] Warning [2]: require_once(usuario.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 2
-
-[18-Jul-2025 02:03:19 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'usuario.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php:2
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(22): include()
-#1 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#3 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 2
-[18-Jul-2025 02:03:58 Europe/Berlin] [2025-07-18 02:03:58] Warning [2]: require_once(../../modelos/usuario.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 2
-
-[18-Jul-2025 02:03:58 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../modelos/usuario.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php:2
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(22): include()
-#1 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#3 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 2
-[18-Jul-2025 02:03:59 Europe/Berlin] [2025-07-18 02:03:59] Warning [2]: require_once(../../modelos/usuario.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 2
-
-[18-Jul-2025 02:03:59 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../modelos/usuario.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php:2
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(22): include()
-#1 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#3 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 2
-[18-Jul-2025 02:03:59 Europe/Berlin] [2025-07-18 02:03:59] Warning [2]: require_once(../../modelos/usuario.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 2
-
-[18-Jul-2025 02:03:59 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../modelos/usuario.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php:2
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(22): include()
-#1 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#3 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 2
-[18-Jul-2025 02:03:59 Europe/Berlin] [2025-07-18 02:03:59] Warning [2]: require_once(../../modelos/usuario.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 2
-
-[18-Jul-2025 02:03:59 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../modelos/usuario.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php:2
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(22): include()
-#1 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#3 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 2
-[18-Jul-2025 02:04:03 Europe/Berlin] [2025-07-18 02:04:03] Warning [2]: require_once(../../modelos/usuario.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 2
-
-[18-Jul-2025 02:04:03 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../modelos/usuario.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php:2
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(22): include()
-#1 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#3 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\inicio.php on line 2
-[18-Jul-2025 02:08:15 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ControladorPlantilla" not found in C:\xampp\htdocs\curso\php\index.php:5
-Stack trace:
-#0 {main}
-  thrown in C:\xampp\htdocs\curso\php\index.php on line 5
-[18-Jul-2025 02:08:16 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ControladorPlantilla" not found in C:\xampp\htdocs\curso\php\index.php:5
-Stack trace:
-#0 {main}
-  thrown in C:\xampp\htdocs\curso\php\index.php on line 5
-[18-Jul-2025 02:08:16 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ControladorPlantilla" not found in C:\xampp\htdocs\curso\php\index.php:5
-Stack trace:
-#0 {main}
-  thrown in C:\xampp\htdocs\curso\php\index.php on line 5
-[18-Jul-2025 02:08:16 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ControladorPlantilla" not found in C:\xampp\htdocs\curso\php\index.php:5
-Stack trace:
-#0 {main}
-  thrown in C:\xampp\htdocs\curso\php\index.php on line 5
-[18-Jul-2025 02:08:17 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ControladorPlantilla" not found in C:\xampp\htdocs\curso\php\index.php:5
-Stack trace:
-#0 {main}
-  thrown in C:\xampp\htdocs\curso\php\index.php on line 5
-[18-Jul-2025 02:08:17 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ControladorPlantilla" not found in C:\xampp\htdocs\curso\php\index.php:5
-Stack trace:
-#0 {main}
-  thrown in C:\xampp\htdocs\curso\php\index.php on line 5
-[18-Jul-2025 02:08:17 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ControladorPlantilla" not found in C:\xampp\htdocs\curso\php\index.php:5
-Stack trace:
-#0 {main}
-  thrown in C:\xampp\htdocs\curso\php\index.php on line 5
-[18-Jul-2025 02:08:21 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ControladorPlantilla" not found in C:\xampp\htdocs\curso\php\index.php:5
-Stack trace:
-#0 {main}
-  thrown in C:\xampp\htdocs\curso\php\index.php on line 5
-[18-Jul-2025 02:08:22 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ControladorPlantilla" not found in C:\xampp\htdocs\curso\php\index.php:5
-Stack trace:
-#0 {main}
-  thrown in C:\xampp\htdocs\curso\php\index.php on line 5
-[18-Jul-2025 02:09:02 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ControladorPlantilla" not found in C:\xampp\htdocs\curso\php\index.php:5
-Stack trace:
-#0 {main}
-  thrown in C:\xampp\htdocs\curso\php\index.php on line 5
-[18-Jul-2025 02:09:03 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ControladorPlantilla" not found in C:\xampp\htdocs\curso\php\index.php:5
-Stack trace:
-#0 {main}
-  thrown in C:\xampp\htdocs\curso\php\index.php on line 5
-[18-Jul-2025 02:09:03 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ControladorPlantilla" not found in C:\xampp\htdocs\curso\php\index.php:5
-Stack trace:
-#0 {main}
-  thrown in C:\xampp\htdocs\curso\php\index.php on line 5
-[18-Jul-2025 02:09:03 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ControladorPlantilla" not found in C:\xampp\htdocs\curso\php\index.php:5
-Stack trace:
-#0 {main}
-  thrown in C:\xampp\htdocs\curso\php\index.php on line 5
-[18-Jul-2025 02:09:03 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ControladorPlantilla" not found in C:\xampp\htdocs\curso\php\index.php:5
-Stack trace:
-#0 {main}
-  thrown in C:\xampp\htdocs\curso\php\index.php on line 5
-[18-Jul-2025 02:09:03 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ControladorPlantilla" not found in C:\xampp\htdocs\curso\php\index.php:5
-Stack trace:
-#0 {main}
-  thrown in C:\xampp\htdocs\curso\php\index.php on line 5
-[18-Jul-2025 02:09:03 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ControladorPlantilla" not found in C:\xampp\htdocs\curso\php\index.php:5
-Stack trace:
-#0 {main}
-  thrown in C:\xampp\htdocs\curso\php\index.php on line 5
-[18-Jul-2025 02:09:25 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ControladorPlantilla" not found in C:\xampp\htdocs\curso\php\index.php:5
-Stack trace:
-#0 {main}
-  thrown in C:\xampp\htdocs\curso\php\index.php on line 5
-[18-Jul-2025 02:09:29 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ControladorPlantilla" not found in C:\xampp\htdocs\curso\php\index.php:5
-Stack trace:
-#0 {main}
-  thrown in C:\xampp\htdocs\curso\php\index.php on line 5
-[23-Jul-2025 20:55:26 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ControladorFormularios" not found in C:\xampp\htdocs\curso\php\app\vistas\paginas\registro.php:39
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(22): include()
-#1 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#3 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\registro.php on line 39
-[23-Jul-2025 20:55:34 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ControladorFormularios" not found in C:\xampp\htdocs\curso\php\app\vistas\paginas\registro.php:39
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(22): include()
-#1 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\index.php(10): ControladorPlantilla->ctrGetPlantilla()
-#3 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\vistas\paginas\registro.php on line 39
-[23-Jul-2025 20:57:51 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ModeloFormularios" not found in C:\xampp\htdocs\curso\php\app\controladores\formularios.controlador.php:16
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\paginas\registro.php(39): ControladorFormularios::ctrRegistro()
-#1 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(22): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#3 C:\xampp\htdocs\curso\php\index.php(11): ControladorPlantilla->ctrGetPlantilla()
-#4 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\controladores\formularios.controlador.php on line 16
-[23-Jul-2025 20:58:00 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ModeloFormularios" not found in C:\xampp\htdocs\curso\php\app\controladores\formularios.controlador.php:16
-Stack trace:
-#0 C:\xampp\htdocs\curso\php\app\vistas\paginas\registro.php(39): ControladorFormularios::ctrRegistro()
-#1 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(22): include('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
-#3 C:\xampp\htdocs\curso\php\index.php(11): ControladorPlantilla->ctrGetPlantilla()
-#4 {main}
-  thrown in C:\xampp\htdocs\curso\php\app\controladores\formularios.controlador.php on line 16
-[23-Jul-2025 21:04:22 Europe/Berlin] PHP Notice:  Only variables should be passed by reference in C:\xampp\htdocs\curso\php\app\modelos\formularios.modelo.php on line 12
-[23-Jul-2025 21:04:34 Europe/Berlin] PHP Notice:  Only variables should be passed by reference in C:\xampp\htdocs\curso\php\app\modelos\formularios.modelo.php on line 12
-[23-Jul-2025 21:05:21 Europe/Berlin] PHP Notice:  Only variables should be passed by reference in C:\xampp\htdocs\curso\php\app\modelos\formularios.modelo.php on line 12
-[23-Jul-2025 21:05:28 Europe/Berlin] PHP Notice:  Only variables should be passed by reference in C:\xampp\htdocs\curso\php\app\modelos\formularios.modelo.php on line 12
-[23-Jul-2025 21:05:41 Europe/Berlin] PHP Notice:  Only variables should be passed by reference in C:\xampp\htdocs\curso\php\app\modelos\formularios.modelo.php on line 12
-[23-Jul-2025 21:49:11 Europe/Berlin] PHP Notice:  Only variables should be passed by reference in C:\xampp\htdocs\curso\php\app\modelos\formularios.modelo.php on line 12
-[25-Jul-2025 01:04:03 Europe/Berlin] PHP Notice:  Only variables should be passed by reference in C:\xampp\htdocs\curso\php\app\modelos\formularios.modelo.php on line 12
+[30-Jul-2025 20:21:42 Europe/Berlin] ctrIngresoUsuario se invocó. POST=Array
+(
+    [email] => pacoypela2017@hotmail.com
+    [contrasena] => 5468645
+)
+
+[30-Jul-2025 20:21:42 Europe/Berlin] Email buscado: pacoypela2017@hotmail.com
+[30-Jul-2025 20:21:42 Europe/Berlin] Resultado SQL: Array
+(
+    [id] => 24
+    [nombre] => Gino
+    [email] => pacoypela2017@hotmail.com
+    [contrasena] => $2y$10$BzE137z7QAp61
+    [genero] => Masculino
+    [fecha] => 27/07/2025
+)
+
+[30-Jul-2025 20:21:42 Europe/Berlin] Intentando login con: pacoypela2017@hotmail.com
+[30-Jul-2025 20:21:42 Europe/Berlin] LOGIN FALLÓ
+[30-Jul-2025 20:21:47 Europe/Berlin] ctrIngresoUsuario se invocó. POST=Array
+(
+    [email] => pacoypela2017@hotmail.com
+    [contrasena] => 123
+)
+
+[30-Jul-2025 20:21:47 Europe/Berlin] Email buscado: pacoypela2017@hotmail.com
+[30-Jul-2025 20:21:47 Europe/Berlin] Resultado SQL: Array
+(
+    [id] => 24
+    [nombre] => Gino
+    [email] => pacoypela2017@hotmail.com
+    [contrasena] => $2y$10$BzE137z7QAp61
+    [genero] => Masculino
+    [fecha] => 27/07/2025
+)
+
+[30-Jul-2025 20:21:47 Europe/Berlin] Intentando login con: pacoypela2017@hotmail.com
+[30-Jul-2025 20:21:47 Europe/Berlin] LOGIN FALLÓ
+[30-Jul-2025 20:21:53 Europe/Berlin] ctrIngresoUsuario se invocó. POST=Array
+(
+    [email] => pelozo@gmail.com
+    [contrasena] => 123
+)
+
+[30-Jul-2025 20:21:53 Europe/Berlin] Email buscado: pelozo@gmail.com
+[30-Jul-2025 20:21:53 Europe/Berlin] Resultado SQL: Array
+(
+    [id] => 32
+    [nombre] => Florencia
+    [email] => pelozo@gmail.com
+    [contrasena] => $2y$10$.dhFdBcY7qJA.uMIYDFBJOotfnJqf.S5bNxAxCXofIP8QgZ7MzAo.
+    [genero] => Femenino
+    [fecha] => 30/07/2025
+)
+
+[30-Jul-2025 20:21:53 Europe/Berlin] Intentando login con: pelozo@gmail.com
+[30-Jul-2025 20:21:53 Europe/Berlin] LOGIN OK, redirigiendo
+[30-Jul-2025 20:22:14 Europe/Berlin] ctrIngresoUsuario se invocó. POST=Array
+(
+    [email] => pelozo@gmail.com
+    [contrasena] => 123
+)
+
+[30-Jul-2025 20:22:14 Europe/Berlin] Email buscado: pelozo@gmail.com
+[30-Jul-2025 20:22:14 Europe/Berlin] Resultado SQL: Array
+(
+    [id] => 32
+    [nombre] => Florencia
+    [email] => pelozo@gmail.com
+    [contrasena] => $2y$10$.dhFdBcY7qJA.uMIYDFBJOotfnJqf.S5bNxAxCXofIP8QgZ7MzAo.
+    [genero] => Femenino
+    [fecha] => 30/07/2025
+)
+
+[30-Jul-2025 20:22:14 Europe/Berlin] Intentando login con: pelozo@gmail.com
+[30-Jul-2025 20:22:14 Europe/Berlin] LOGIN OK, redirigiendo
+[30-Jul-2025 20:24:27 Europe/Berlin] ctrIngresoUsuario se invocó. POST=Array
+(
+    [email] => carlos@gmail.con
+    [contrasena] => 123
+)
+
+[30-Jul-2025 20:24:27 Europe/Berlin] Email buscado: carlos@gmail.con
+[30-Jul-2025 20:24:27 Europe/Berlin] Resultado SQL: 
+[30-Jul-2025 20:24:27 Europe/Berlin] Intentando login con: carlos@gmail.con
+[30-Jul-2025 20:24:27 Europe/Berlin] LOGIN FALLÓ
+[30-Jul-2025 20:24:54 Europe/Berlin] ctrIngresoUsuario se invocó. POST=Array
+(
+    [email] => carlos@gmail.com
+    [contrasena] => 123
+)
+
+[30-Jul-2025 20:24:54 Europe/Berlin] Email buscado: carlos@gmail.com
+[30-Jul-2025 20:24:54 Europe/Berlin] Resultado SQL: Array
+(
+    [id] => 33
+    [nombre] => Carlos
+    [email] => carlos@gmail.com
+    [contrasena] => $2y$10$607pZf8WxXGwWiMbdfj8COoDNundEyH9vu6pjgREvfuUwYZWraO2i
+    [genero] => Masculino
+    [fecha] => 30/07/2025
+)
+
+[30-Jul-2025 20:24:54 Europe/Berlin] Intentando login con: carlos@gmail.com
+[30-Jul-2025 20:24:55 Europe/Berlin] LOGIN OK, redirigiendo
+[30-Jul-2025 20:25:18 Europe/Berlin] ctrIngresoUsuario se invocó. POST=Array
+(
+    [email] => pelozo@gmail.com
+    [contrasena] => 123
+)
+
+[30-Jul-2025 20:25:18 Europe/Berlin] Email buscado: pelozo@gmail.com
+[30-Jul-2025 20:25:18 Europe/Berlin] Resultado SQL: Array
+(
+    [id] => 32
+    [nombre] => Florencia
+    [email] => pelozo@gmail.com
+    [contrasena] => $2y$10$.dhFdBcY7qJA.uMIYDFBJOotfnJqf.S5bNxAxCXofIP8QgZ7MzAo.
+    [genero] => Femenino
+    [fecha] => 30/07/2025
+)
+
+[30-Jul-2025 20:25:18 Europe/Berlin] Intentando login con: pelozo@gmail.com
+[30-Jul-2025 20:25:18 Europe/Berlin] LOGIN OK, redirigiendo
+[30-Jul-2025 20:28:17 Europe/Berlin] ctrIngresoUsuario se invocó. POST=Array
+(
+    [email] => pelozo@gmail.com
+    [contrasena] => 123
+)
+
+[30-Jul-2025 20:28:17 Europe/Berlin] Email buscado: pelozo@gmail.com
+[30-Jul-2025 20:28:17 Europe/Berlin] Resultado SQL: Array
+(
+    [id] => 32
+    [nombre] => Florencia
+    [email] => pelozo@gmail.com
+    [contrasena] => $2y$10$.dhFdBcY7qJA.uMIYDFBJOotfnJqf.S5bNxAxCXofIP8QgZ7MzAo.
+    [genero] => Femenino
+    [fecha] => 30/07/2025
+)
+
+[30-Jul-2025 20:28:17 Europe/Berlin] Intentando login con: pelozo@gmail.com
+[30-Jul-2025 20:28:17 Europe/Berlin] LOGIN OK, redirigiendo
+[30-Jul-2025 20:33:33 Europe/Berlin] ctrIngresoUsuario se invocó. POST=Array
+(
+    [email] => pelozo@gmail.com
+    [contrasena] => 123
+)
+
+[30-Jul-2025 20:33:33 Europe/Berlin] Email buscado: pelozo@gmail.com
+[30-Jul-2025 20:33:33 Europe/Berlin] Resultado SQL: Array
+(
+    [id] => 32
+    [nombre] => Florencia
+    [email] => pelozo@gmail.com
+    [contrasena] => $2y$10$.dhFdBcY7qJA.uMIYDFBJOotfnJqf.S5bNxAxCXofIP8QgZ7MzAo.
+    [genero] => Femenino
+    [fecha] => 30/07/2025
+)
+
+[30-Jul-2025 20:33:33 Europe/Berlin] Intentando login con: pelozo@gmail.com
+[30-Jul-2025 20:33:33 Europe/Berlin] LOGIN OK, redirigiendo
+[30-Jul-2025 20:57:24 Europe/Berlin] ctrIngresoUsuario se invocó. POST=Array
+(
+    [email] => carlos@gmail.com
+    [contrasena] => 123
+)
+
+[30-Jul-2025 20:57:24 Europe/Berlin] Email buscado: carlos@gmail.com
+[30-Jul-2025 20:57:24 Europe/Berlin] Resultado SQL: Array
+(
+    [id] => 33
+    [nombre] => Carlos
+    [email] => carlos@gmail.com
+    [contrasena] => $2y$10$607pZf8WxXGwWiMbdfj8COoDNundEyH9vu6pjgREvfuUwYZWraO2i
+    [genero] => Masculino
+    [fecha] => 30/07/2025
+)
+
+[30-Jul-2025 20:57:24 Europe/Berlin] Intentando login con: carlos@gmail.com
+[30-Jul-2025 20:57:24 Europe/Berlin] LOGIN OK, redirigiendo
+[30-Jul-2025 21:27:50 Europe/Berlin] ctrIngresoUsuario se invocó. POST=Array
+(
+    [email] => carlos@gmail.com
+    [contrasena] => 123
+)
+
+[30-Jul-2025 21:27:50 Europe/Berlin] Email buscado: carlos@gmail.com
+[30-Jul-2025 21:27:50 Europe/Berlin] Resultado SQL: Array
+(
+    [id] => 33
+    [nombre] => Carlos
+    [email] => carlos@gmail.com
+    [contrasena] => $2y$10$607pZf8WxXGwWiMbdfj8COoDNundEyH9vu6pjgREvfuUwYZWraO2i
+    [genero] => Masculino
+    [fecha] => 30/07/2025
+)
+
+[30-Jul-2025 21:27:50 Europe/Berlin] Intentando login con: carlos@gmail.com
+[30-Jul-2025 21:27:50 Europe/Berlin] LOGIN OK, redirigiendo
+[30-Jul-2025 22:07:01 Europe/Berlin] ctrIngresoUsuario se invocó. POST=Array
+(
+    [email] => pelozo@gmail.com
+    [contrasena] => 123
+)
+
+[30-Jul-2025 22:07:01 Europe/Berlin] Email buscado: pelozo@gmail.com
+[30-Jul-2025 22:07:01 Europe/Berlin] Resultado SQL: Array
+(
+    [id] => 32
+    [nombre] => Florencia
+    [email] => pelozo@gmail.com
+    [contrasena] => $2y$10$.dhFdBcY7qJA.uMIYDFBJOotfnJqf.S5bNxAxCXofIP8QgZ7MzAo.
+    [genero] => Femenino
+    [fecha] => 30/07/2025
+)
+
+[30-Jul-2025 22:07:01 Europe/Berlin] Intentando login con: pelozo@gmail.com
+[30-Jul-2025 22:07:01 Europe/Berlin] LOGIN OK, redirigiendo

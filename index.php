@@ -1,9 +1,11 @@
 <?php 
-require_once "./app/controladores/plantilla.controlador.php";
-require_once "./app/controladores/formularios.controlador.php";
-require_once "./app/modelos/formularios.modelo.php";
-require_once "./app/config/errors.php";
+session_start();
 
+require __DIR__ . '/app/controladores/plantilla.controlador.php';
+require __DIR__ . '/app/controladores/formularios.controlador.php';
+require __DIR__ . '/app/modelos/formularios.modelo.php';
+require __DIR__ . '/app/modelos/usuario.php';
+require __DIR__ . '/app/config/errors.php';
 
 //Instanciar el objeto 
 $plantilla = new ControladorPlantilla();
