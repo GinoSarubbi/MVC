@@ -15,7 +15,7 @@
                             placeholder="Email" required>
                     </div>
                     <div class="col-md mb-3 input-group">
-                        <span class="input-group-text bg-white"><i class="bi bi-person-fill"></i></span>
+                        <span class="input-group-text bg-white"><i class="bi bi-person-fill text-secondary"></i></span>
                         <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Usuario" required>
                     </div>
                 </div>
@@ -29,7 +29,7 @@
                     </div>
                     <div class="col-md-2 mb-3 input-group">
                         <span class="input-group-text bg-white">
-                            <i class="bi bi-gender-ambiguous"></i>
+                            <i class="bi bi-gender-ambiguous text-secondary"></i>
                         </span>
                         <select id="genero" name="genero" name="genero" class="form-control" required>
                             <option value="" disabled selected>Género</option>

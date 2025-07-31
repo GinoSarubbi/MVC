@@ -217,3 +217,22 @@
 
 [30-Jul-2025 22:07:01 Europe/Berlin] Intentando login con: pelozo@gmail.com
 [30-Jul-2025 22:07:01 Europe/Berlin] LOGIN OK, redirigiendo
+[30-Jul-2025 22:22:41 Europe/Berlin] ctrIngresoUsuario se invocó. POST=Array
+(
+    [email] => yanet@gmail.com
+    [contrasena] => yanet
+)
+
+[30-Jul-2025 22:22:41 Europe/Berlin] Email buscado: yanet@gmail.com
+[30-Jul-2025 22:22:41 Europe/Berlin] Resultado SQL: Array
+(
+    [id] => 34
+    [nombre] => Yanet
+    [email] => yanet@gmail.com
+    [contrasena] => $2y$10$1vN4TbNpimfXXXOjkkU7ZeFQiD60sex1bbHrXuoF3U7m50DUj3tLS
+    [genero] => Femenino
+    [fecha] => 30/07/2025
+)
+
+[30-Jul-2025 22:22:41 Europe/Berlin] Intentando login con: yanet@gmail.com
+[30-Jul-2025 22:22:41 Europe/Berlin] LOGIN OK, redirigiendo
