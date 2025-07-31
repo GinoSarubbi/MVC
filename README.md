@@ -72,8 +72,6 @@ php/
 
    * **Layouts**: `app/vistas/plantilla.php` incluye header, sidebar y secciones de contenido.
    * **Páginas**: en `app/vistas/paginas/` cada archivo maneja un estado (inicio, registro, etc.).
-   * **ConfirmDelete**: vista intermedia para confirmar eliminación vía POST.
-
 ---
 
 ## 🔧 Puntos clave y buenas prácticas
@@ -81,19 +79,17 @@ php/
 * **PDO** y **prepared statements** para prevenir SQL Injection.
 * **MVC** separa responsabilidades: facilitando mantenimiento y escalabilidad.
 * **Bootstrap 5 Offcanvas** para un sidebar responsivo y **.table-responsive** para tablas con scroll en móviles.
-* **Confirmación sin JavaScript**: flujos de POST para confirmDelete.
 
 ---
 
-## 🛠️ Retos y siguientes pasos
+## 🛠️ siguientes pasos a seguir en este proyecto
 
 1. **Agregar actualización (UPDATE)** de usuario con vista y controlador dedicados.
-2. **Implementar autenticación**: login/logout, middleware de sesión.
-3. **Añadir validaciones** de formularios en el modelo o un servicio aparte.
-4. **Paginación** en la tabla de usuarios.
+2. **Añadir validaciones** de formularios en el modelo o un servicio aparte.
+3. **Paginación** en la tabla de usuarios.
 
 ---
 
 ## 📜 Licencia
 
-Uso educativo y referencial. Puedes modificarlo y adaptarlo citando la fuente.
+Uso educativo y referencial. Puedes modificarlo y adaptarlo citandome!!
