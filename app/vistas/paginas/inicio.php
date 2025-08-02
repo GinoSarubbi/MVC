@@ -72,8 +72,8 @@
     }
 </style>
 <div class="d-flex">
-    <nav id="sidebarMenu"
-        class="sidebar collapse d-none d-md-block d-sm-block vh-100 d-flex flex-column p-3 bg-dark">
+    <nav id="sidebarMenuDesktop"
+        class="sidebar d-none d-md-flex vh-100 flex-column p-3 bg-dark">
         <a href="#" class="d-flex align-items-center mb-4 gap-3 text-decoration-none">
             <i class="bi bi-kanban fs-1 text-danger"></i>
             <span class="fs-4 text-white"><strong>UserManager</strong></span>
@@ -105,14 +105,6 @@
     <!-- MAIN CONTENT -->
     <div class="flex-grow-1 d-flex flex-column">
         <header class="d-flex align-items-center justify-content-between bg-white border-bottom p-3">
-            <button class="btn btn-outline-secondary d-md-none" type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#sidebarMenu"
-                aria-controls="sidebarMenu"
-                aria-expanded="false"
-                aria-label="Mostrar menú">
-                <i class="bi bi-list fs-2"></i>
-            </button>
             <?php
             $gen    = strtolower($_SESSION['usuario']['genero'] ?? '');
             $saludo = ($gen === 'femenino') ? 'Bienvenida' : 'Bienvenido';
@@ -121,6 +113,49 @@
                 <span class="d-block d-sm-inline"><?= $saludo ?>,</span>
                 <strong><?= htmlspecialchars($_SESSION['usuario']['nombre']) ?></strong>
             </h1>
+
+            <!-- botón móvil que abre offcanvas -->
+            <button class="btn btn-outline-secondary d-md-none" type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#sidebarMenuMobile"
+                aria-controls="sidebarMenuMobile"
+                aria-label="Mostrar menú">
+                <i class="bi bi-list fs-2"></i>
+            </button>
+
+            <!-- OFFCANVAS MÓVIL -->
+            <section class="offcanvas offcanvas-start d-md-none bg-dark text-white" tabindex="-1" id="sidebarMenuMobile"
+                aria-labelledby="sidebarMenuMobileLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="sidebarMenuMobileLabel">UserManager</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="offcanvas-body d-flex flex-column">
+                    <ul class="nav nav-pills flex-column mb-auto">
+                        <li class="nav-item mb-1">
+                            <a href="index.php?ruta=inicio" class="nav-link active">
+                                <i class="bi bi-house-door-fill me-2 text-white"></i> <strong>Inicio</strong>
+                            </a>
+                        </li>
+                        <li class="nav-item mb-1">
+                            <a href="index.php?ruta=addUsuario" class="nav-link">
+                                <i class="bi bi-person-plus-fill me-2 text-white"></i> <strong class="text-white">Agregar Usuario</strong>
+                            </a>
+                        </li>
+                        <li class="nav-item mb-4">
+                            <a href="index.php?ruta=productos" class="nav-link">
+                                <i class="bi bi-box-seam me-2 text-white"></i> <strong class="text-white">Productos</strong>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="mt-auto">
+                        <a href="index.php?ruta=ingreso" class="btn btn-sm btn-outline-primary w-100">
+                            <i class="bi bi-box-arrow-right me-1"></i> Cerrar sesión
+                        </a>
+                    </div>
+                </div>
+            </section>
         </header>
 
         <!-- DASHBOARD CARDS -->
@@ -206,7 +241,7 @@
                                     <td><?= htmlspecialchars($usuario['email']) ?></td>
                                     <td><?= htmlspecialchars($usuario['nombre']) ?></td>
                                     <td><?= htmlspecialchars($usuario['genero']) ?></td>
-                                   
+
                                 </tr>
                             <?php endforeach; ?>
                         <?php else: ?>
