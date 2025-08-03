@@ -127,7 +127,10 @@
             <section class="offcanvas offcanvas-start d-md-none bg-dark text-white" tabindex="-1" id="sidebarMenuMobile"
                 aria-labelledby="sidebarMenuMobileLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="sidebarMenuMobileLabel">UserManager</h5>
+                    <a href="#" class="d-flex align-items-center mb-4 gap-3 text-decoration-none">
+                        <i class="bi bi-kanban fs-1 text-danger"></i>
+                        <h5 class="offcanvas-title text-white font-bold" id="sidebarMenuMobileLabel">UserManager</h5>
+                    </a>
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                         aria-label="Cerrar"></button>
                 </div>
