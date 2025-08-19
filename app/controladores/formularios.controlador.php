@@ -26,7 +26,6 @@ class ControladorFormularios
         }
     }
 
-
     static public function ctrSeleccionarRegistros($item, $valor)
     {
         $tabla = "registro";
@@ -52,7 +51,7 @@ class ControladorFormularios
                 error_log("LOGIN OK, redirigiendo");
                 $_SESSION["validarIngreso"] = true;
                 $_SESSION["usuario"] = $respuesta;
-                 $_SESSION["genero"] = $respuesta["genero"];
+                $_SESSION["genero"] = $respuesta["genero"];
                 header("Location: index.php?ruta=inicio");
                 exit;
             } else {
@@ -64,17 +63,77 @@ class ControladorFormularios
         }
     }
 
+    //actualizar registro 
+    public static function ctrActualizarRegistro()
+    {
+        if ($_SERVER['REQUEST_METHOD'] !== 'POST') return null;
+
+        // Campos esperados del form
+        $id     = isset($_POST['idUsuario']) ? (int)$_POST['idUsuario'] : 0;
+        $email  = trim($_POST['actualizarEmail'] ?? '');
+        $nombre = trim($_POST['actualizarNombre'] ?? '');
+        $genero = trim($_POST['actualizarGenero'] ?? '');
+        $pass   = trim($_POST['actualizarContrasena'] ?? ''); // puede venir vacío
+
+        if ($id <= 0 || $email === '' || $nombre === '' || $genero === '') {
+            return "error";
+        }
+
+        $datos = [
+            'id'     => $id,
+            'email'  => $email,
+            'nombre' => $nombre,
+            'genero' => $genero
+        ];
+
+        if ($pass !== '') {
+            $datos['contrasena'] = $pass;
+        }
+
+        $tabla = "registro";
+        return ModeloFormularios::mdlActualizarRegistro($tabla, $datos);
+    }
+
+    //elimianr usuario
     static public function ctrEliminarUsuario()
     {
-        if (isset($_GET["id"])) {
-            $id = $_GET["id"];
-            $respuesta = ModeloFormularios::eliminarPorId($id);
-            if ($respuesta) {
-                header("Location: index.php?ruta=inicio");
-                exit;
-            } else {
-                $_SESSION["error_message"] = "Error al eliminar el usuario.";
+        if (isset($_POST["eliminarRegistro"])) {
+            $tabla = "registro";
+            $valor = $_POST["eliminarRegistro"];
+
+            $respuesta = ModeloFormularios::mdlEliminarRegistro($tabla, $valor);
+
+            if ($respuesta == "ok") {
+                echo '<script>
+                    if (window.history.replaceState){
+                        window.history.replaceState(null, null, window.location.href);                  
+                    }
+                        window.location = "index.php?ruta=inicio";
+               </script>';
             }
         }
+    }
+
+    //productos
+     static public function ctrSeleccionarProductos($item, $valor)
+    {
+        $tabla = "productos";
+        $respuesta = ModeloFormularios::mdlSeleccionarProductos($tabla, $item, $valor);
+        return $respuesta;
+    }
+
+    public static function ctrValorInventarioProductos()
+    {
+        return ModeloFormularios::mdlValorInventarioProductos();
+    }
+
+    // ControladorFormularios.php
+    public static function ctrProductosBajoStock()
+    {
+        return ModeloFormularios::mdlProductosBajoStock();
+    }
+    public static function ctrCantidadBajoStock()
+    {
+        return ModeloFormularios::mdlCantidadBajoStock();
     }
 }

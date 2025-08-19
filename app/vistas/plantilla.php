@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -20,7 +21,7 @@
 <body class="bg-muted text-light ">
     <section id="contenido">
         <?php
-        $rutas = ['inicio', 'registro', 'ingreso', 'salir', 'nosotros', 'eliminarUsuario', 'editarUsuario', 'error404'];
+        $rutas = ['inicio', 'registro', 'ingreso', 'salir', 'nosotros', 'error404', 'editar', 'productos'];
         $ruta = $_GET['ruta'] ?? 'nosotros';
 
         if (in_array($ruta, $rutas)) {
@@ -40,7 +41,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
     </script>
-
 </body>
 
 </html>

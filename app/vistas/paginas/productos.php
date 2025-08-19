@@ -23,20 +23,16 @@
         background-color: #2c8cecff;
         color: #fff;
     }
-
     .card-stats {
         border: .2px solid #f0f0f0ff;
         border-radius: .5rem;
         transition: transform 0.2s ease-in-out;
-        /* evita que su contenido provoque overflow en flex containers */
         min-width: 0;
     }
 
     .card-stats:hover {
         transform: translateY(-4px);
     }
-
-    /* ajustes móviles */
     @media (max-width: 767px) {
         header h1 {
             font-size: 1.25rem;
@@ -45,19 +41,15 @@
 
         table-responsive {
             overflow-x: auto;
-            /* ya debería venir de Bootstrap, pero lo reafirmamos */
             -webkit-overflow-scrolling: touch;
-            /* scroll suave en iOS */
         }
 
-        /* en pantallas chicas dejá que la tabla sea tan ancha como su contenido para que aparezca el scroll */
         @media (max-width: 992px) {
             .table-responsive>.table {
                 width: max-content;
             }
         }
 
-        /* opcional: achicar padding y fuente en celular para que se vea mejor sin romper tanto */
         @media (max-width: 576px) {
 
             .table-responsive th,
@@ -65,7 +57,6 @@
                 padding: .3rem .4rem;
                 font-size: .75rem;
                 white-space: nowrap;
-                /* mantiene todo en una línea para que scrollee y no se desarme */
             }
         }
 
@@ -75,47 +66,20 @@
     <?php include 'app/components/sidebar.php'; ?>
     <div class="flex-grow-1 d-flex flex-column">
         <?php include 'app/components/header.php'; ?>
+
+        <?php $productos = ControladorFormularios::ctrSeleccionarProductos(null, null);
+        $total = count($productos);
+
+        $valorInventario = ControladorFormularios::ctrValorInventarioProductos();
+        $valorInventarioFmt = number_format($valorInventario, 2, ',', '.');
+
+        $bajos = ControladorFormularios::ctrCantidadBajoStock();
+        $listaBajos = ControladorFormularios::ctrProductosBajoStock();
+
+        ?>
+
         <div class="container-fluid p-4 flex-grow-1">
             <div class="row g-4">
-                <?php
-                $usuarios = ControladorFormularios::ctrSeleccionarRegistros(null, null);
-                $total = count($usuarios);
-
-                $productos = ControladorFormularios::ctrSeleccionarProductos(null, null);
-                $total = count($productos);
-
-                $valorInventario = ControladorFormularios::ctrValorInventarioProductos();
-                $valorInventarioFmt = number_format($valorInventario, 2, ',', '.');
-                ?>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="card card-stats bg-white">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                    <h6 class="card-title mb-1">Total Usuarios</h6>
-                                    <h3 class="mb-0"><?= $total ?></h3>
-                                </div>
-                                <i class="bi bi-people-fill fs-1 text-success responsive-icon"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="card card-stats bg-white">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                    <h6 class="card-title mb-1">Valor Inventario</h6>
-                                    <h3 class="mb-0">$ <?= $valorInventarioFmt ?></h3>
-                                </div>
-                                <i class="bi bi-cash-stack fs-1 text-success responsive-icon"></i>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="card card-stats bg-white">
                         <div class="card-body">
@@ -129,45 +93,73 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                
+                <div class="col-12 col-md-6 col-lg-3">
                     <div class="card card-stats bg-white">
                         <div class="card-body">
                             <div class="d-flex justify-content-between align-items-center">
                                 <div>
-                                    <h6 class="card-title mb-1">Ventas Hoy</h6>
-                                    <h3 class="mb-0">8</h3>
+                                    <h6 class="card-title mb-1">Valor Inventario</h6>
+                                    <h3 class="mb-0">$ <?= $valorInventarioFmt ?></h3>
                                 </div>
-                                <i class="bi bi-currency-dollar fs-1 text-warning responsive-icon"></i>
+                                <i class="bi bi-cash-stack fs-1 text-success responsive-icon"></i>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>  
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card card-stats bg-white">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6 class="card-title mb-1">Productos Bajo Stock</h6>
+                                    <h3 class="mb-0"><?= $bajos ?></h3>
+                                </div>
+                                <i class="bi bi-exclamation-triangle-fill fs-1 text-warning responsive-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                    <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card card-stats bg-white">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6 class="card-title mb-1">Lista de Productos Bajo Stock</h6>
+                                    <span class="mb-0"><?= !empty($listaBajos) ? implode(', ', array_map(fn($p) => htmlspecialchars($p['nombre']), $listaBajos)) : 'Ninguno' ?></span>
+                                </div>
+                                <i class="bi bi-list fs-1 text-info responsive-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
             </div>
 
-            <div class="table-responsive mt-3">
+            <div class="table-responsive mt-3 p-4">
                 <table class="table table-striped table-hover caption-top text-center table-bordered">
-                    <caption class="text-start small mb-1">Lista de Usuarios</caption>
+                    <caption class="text-start small mb-1">Lista de productos</caption>
                     <thead class="text-uppercase align-middle fw-semibold text-white bg-secondary">
                         <tr>
                             <th scope="col">#</th>
-                            <th scope="col">Email</th>
-                            <th scope="col">Usuario</th>
-                            <th scope="col">Género</th>
+                            <th scope="col">Producto</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Stock</th>
+                            <th scope="col">Estado</th>
                             <th scope="col">Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <?php if (!empty($usuarios)): ?>
-                            <?php foreach ($usuarios as $index => $usuario): ?>
+                        <?php if (!empty($productos)): ?>
+                            <?php foreach ($productos as $index => $producto): ?>
                                 <tr>
                                     <td><?= $index + 1 ?></td>
-                                    <td><?= htmlspecialchars($usuario['email']) ?></td>
-                                    <td><?= htmlspecialchars($usuario['nombre']) ?></td>
-                                    <td><?= htmlspecialchars($usuario['genero']) ?></td>
-                                    <td class="d-flex gap-4 justify-content-center"><a href="index.php?ruta=editar&id=<?php echo $usuario["id"]; ?>" class="btn btn-primary">Editar</a>
+                                    <td><?= htmlspecialchars($producto['nombre']) ?></td>
+                                    <td><?= htmlspecialchars($producto['precio']) ?></td>
+                                    <td><?= htmlspecialchars($producto['stock']) ?></td>
+                                    <td><?= htmlspecialchars($producto['estado']) ?></td>
+                                    <td class="d-flex gap-4 justify-content-center"><a href="index.php?ruta=editar&id=<?php echo $producto["id"]; ?>" class="btn btn-primary">Editar</a>
                                         <form method="POST">
-                                            <input type="hidden" value="<?php echo $usuario["id"] ?>" name="eliminarRegistro">
+                                            <input type="hidden" value="<?php echo $producto["id"] ?>" name="eliminarRegistro">
                                             <button class="btn btn-danger" type="submit">Eliminar</button>
                                             <?php
                                             $eliminar = new ControladorFormularios();
@@ -180,9 +172,11 @@
                             <?php endforeach; ?>
                         <?php else: ?>
                             <tr>
-                                <td colspan="5" class="text-center py-3">No hay usuarios registrados.</td>
+                                <td colspan="5" class="text-center py-3">No hay productos registrados.</td>
                             </tr>
                         <?php endif; ?>
                     </tbody>
                 </table>
             </div>
+
+        </div>
