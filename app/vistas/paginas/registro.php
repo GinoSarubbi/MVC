@@ -6,12 +6,12 @@
                 <h1 class="card-title text-center mb-3">Registro</h1>
             </div>
             <p class="text-center text-muted mb-4" id="pingreso"><strong>Por favor completa el formulario para registrarte</p></strong>
-            <form class="" method="POST">
+            <form class="" method="post">
 
                 <div class="row">
                     <div class="col-md mb-3 input-group">
                         <span class="input-group-text bg-white"><i class="bi bi-envelope-fill text-secondary"></i></span>
-                        <input type="email" class="form-control" id="email" name="email"
+                        <input type="email" class="form-control" id="emailRegistro" name="email"
                             placeholder="Email" required>
                     </div>
                     <div class="col-md mb-3 input-group">
@@ -38,9 +38,9 @@
                             <option>Otro</option>
                         </select>
                     </div>
+                    <div id="alerta"> </div>
                 </div>
-
-
+            
                 <div class="d-grid mb-3">
                     <button type="submit" class="btn btn-primary">Registrarse</button>
                 </div>
@@ -50,6 +50,8 @@
                     <a href="index.php?ruta=ingreso" class="link-primary">Inicia sesión aquí</a>
                 </p>
             </form>
+          
+
         </div>
     </div>
 </div>

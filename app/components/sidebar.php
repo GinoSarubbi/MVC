@@ -6,13 +6,8 @@
         </a>
         <ul class="nav nav-pills flex-column mb-auto">
             <li class="nav-item mb-1">
-                <a href="index.php?ruta=inicio" class="nav-link active">
+                <a href="index.php?ruta=inicio" class="nav-link">
                     <i class="bi bi-house-door-fill me-2"></i> <strong>Inicio</strong>
-                </a>
-            </li>
-            <li class="nav-item mb-1">
-                <a href="index.php?ruta=addUsuario" class="nav-link">
-                    <i class="bi bi-person-plus-fill me-2"></i> <strong>Agregar Usuario</strong>
                 </a>
             </li>
             <li class="nav-item mb-4">

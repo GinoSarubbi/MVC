@@ -1,3 +1,10 @@
+<?php 
+if (!isset($_SESSION['usuario'])) {
+    header('Location: index.php?ruta=inicio');
+    exit;
+}
+?> 
+ 
  <header class="d-flex align-items-center justify-content-between bg-white border-bottom p-3">
             <?php
             $gen    = strtolower($_SESSION['usuario']['genero'] ?? '');
@@ -8,7 +15,6 @@
                 <strong><?= htmlspecialchars($_SESSION['usuario']['nombre']) ?></strong>
             </h1>
 
-            <!-- botón móvil que abre offcanvas -->
             <button class="btn btn-outline-secondary d-md-none" type="button"
                 data-bs-toggle="offcanvas"
                 data-bs-target="#sidebarMenuMobile"
@@ -17,7 +23,6 @@
                 <i class="bi bi-list fs-2"></i>
             </button>
 
-            <!-- OFFCANVAS MÓVIL -->
             <section class="offcanvas offcanvas-start d-md-none bg-dark text-white" tabindex="-1" id="sidebarMenuMobile"
                 aria-labelledby="sidebarMenuMobileLabel">
                 <div class="offcanvas-header">

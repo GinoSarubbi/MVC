@@ -36,12 +36,7 @@ ControladorFormularios::ctrIngresoUsuario();
                     </span>
                 </div>
 
-                <?php if (isset($_SESSION['error_message'])): ?>
-                    <div class="alert alert-danger py-2">
-                        <?= $_SESSION['error_message']; ?>
-                    </div>
-                    <?php unset($_SESSION['error_message']); ?>
-                <?php endif; ?>
+               
 
                 <div class="d-grid mb-3">
                     <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
@@ -54,4 +49,3 @@ ControladorFormularios::ctrIngresoUsuario();
         </div>
     </div>
 </div>
-<script src="../../js/Pass.js"></script>

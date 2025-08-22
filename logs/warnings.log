@@ -1708,3 +1708,426 @@ Stack trace:
 #3 C:\xampp\htdocs\curso\php\index.php(14): ControladorPlantilla->ctrGetPlantilla()
 #4 {main}
   thrown in C:\xampp\htdocs\curso\php\app\controladores\formularios.controlador.php on line 127
+[20-Aug-2025 01:45:14 Europe/Berlin] ctrIngresoUsuario se invocó. POST=Array
+(
+    [email] => admin@admin.com
+    [contrasena] => admin
+)
+
+[20-Aug-2025 01:45:14 Europe/Berlin] Email buscado: admin@admin.com
+[20-Aug-2025 01:45:14 Europe/Berlin] Resultado SQL: Array
+(
+    [id] => 37
+    [nombre] => administrador
+    [email] => admin@admin.com
+    [contrasena] => $2y$10$B3m0d4HpjUA0aMI280flK.DIUCQsQQQDLtAQC1b2aS1SmUoC.V4bO
+    [genero] => Femenino
+    [fecha] => 18/08/2025
+)
+
+[20-Aug-2025 01:45:14 Europe/Berlin] Intentando login con: admin@admin.com
+[20-Aug-2025 01:45:14 Europe/Berlin] LOGIN OK, redirigiendo
+[20-Aug-2025 01:47:31 Europe/Berlin] Email buscado: 8
+[20-Aug-2025 01:47:31 Europe/Berlin] Resultado SQL: 
+[20-Aug-2025 01:48:01 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '3 WHERE id = 0' at line 1 in C:\xampp\htdocs\curso\php\app\modelos\formularios.modelo.php:113
+Stack trace:
+#0 C:\xampp\htdocs\curso\php\app\modelos\formularios.modelo.php(113): PDOStatement->execute()
+#1 C:\xampp\htdocs\curso\php\app\controladores\formularios.controlador.php(104): ModeloFormularios::mdlEliminarRegistro('registro', '3')
+#2 C:\xampp\htdocs\curso\php\app\vistas\paginas\productos.php(166): ControladorFormularios::ctrEliminarUsuario()
+#3 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(33): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\curso\php\index.php(14): ControladorPlantilla->ctrGetPlantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\curso\php\app\modelos\formularios.modelo.php on line 113
+[20-Aug-2025 01:48:11 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '3 WHERE id = 0' at line 1 in C:\xampp\htdocs\curso\php\app\modelos\formularios.modelo.php:113
+Stack trace:
+#0 C:\xampp\htdocs\curso\php\app\modelos\formularios.modelo.php(113): PDOStatement->execute()
+#1 C:\xampp\htdocs\curso\php\app\controladores\formularios.controlador.php(104): ModeloFormularios::mdlEliminarRegistro('registro', '3')
+#2 C:\xampp\htdocs\curso\php\app\vistas\paginas\productos.php(166): ControladorFormularios::ctrEliminarUsuario()
+#3 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(33): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\curso\php\index.php(14): ControladorPlantilla->ctrGetPlantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\curso\php\app\modelos\formularios.modelo.php on line 113
+[20-Aug-2025 01:48:14 Europe/Berlin] Email buscado: 8
+[20-Aug-2025 01:48:14 Europe/Berlin] Resultado SQL: 
+[20-Aug-2025 01:55:15 Europe/Berlin] Email buscado: 37
+[20-Aug-2025 01:55:15 Europe/Berlin] Resultado SQL: Array
+(
+    [id] => 37
+    [nombre] => administrador
+    [email] => admin@admin.com
+    [contrasena] => $2y$10$B3m0d4HpjUA0aMI280flK.DIUCQsQQQDLtAQC1b2aS1SmUoC.V4bO
+    [genero] => Femenino
+    [fecha] => 18/08/2025
+)
+
+[20-Aug-2025 01:55:19 Europe/Berlin] Email buscado: 37
+[20-Aug-2025 01:55:19 Europe/Berlin] Resultado SQL: Array
+(
+    [id] => 37
+    [nombre] => administrador
+    [email] => admin@admin.com
+    [contrasena] => $2y$10$B3m0d4HpjUA0aMI280flK.DIUCQsQQQDLtAQC1b2aS1SmUoC.V4bO
+    [genero] => Femenino
+    [fecha] => 18/08/2025
+)
+
+[20-Aug-2025 01:55:31 Europe/Berlin] ctrIngresoUsuario se invocó. POST=Array
+(
+    [email] => admin@admin.com
+    [contrasena] => admin
+)
+
+[20-Aug-2025 01:55:31 Europe/Berlin] Email buscado: admin@admin.com
+[20-Aug-2025 01:55:31 Europe/Berlin] Resultado SQL: Array
+(
+    [id] => 37
+    [nombre] => administrador
+    [email] => admin@admin.com
+    [contrasena] => $2y$10$B3m0d4HpjUA0aMI280flK.DIUCQsQQQDLtAQC1b2aS1SmUoC.V4bO
+    [genero] => Masculino
+    [fecha] => 19/08/2025
+)
+
+[20-Aug-2025 01:55:31 Europe/Berlin] Intentando login con: admin@admin.com
+[20-Aug-2025 01:55:31 Europe/Berlin] LOGIN OK, redirigiendo
+[20-Aug-2025 01:57:07 Europe/Berlin] Email buscado: 8
+[20-Aug-2025 01:57:07 Europe/Berlin] Resultado SQL: 
+[20-Aug-2025 01:59:35 Europe/Berlin] Email buscado: 8
+[20-Aug-2025 01:59:35 Europe/Berlin] Resultado SQL: 
+[20-Aug-2025 02:01:49 Europe/Berlin] Email buscado: 8
+[20-Aug-2025 02:01:49 Europe/Berlin] Resultado SQL: 
+[20-Aug-2025 02:17:05 Europe/Berlin] [2025-08-20 02:17:05] Warning [2]: Undefined array key "usuario" in C:\xampp\htdocs\curso\php\app\components\header.php on line 8
+
+[20-Aug-2025 02:17:05 Europe/Berlin] [2025-08-20 02:17:05] Warning [2]: Trying to access array offset on value of type null in C:\xampp\htdocs\curso\php\app\components\header.php on line 8
+
+[20-Aug-2025 02:17:05 Europe/Berlin] [2025-08-20 02:17:05] Warning [2]: Undefined array key "usuario" in C:\xampp\htdocs\curso\php\app\components\header.php on line 8
+
+[20-Aug-2025 02:17:05 Europe/Berlin] [2025-08-20 02:17:05] Warning [2]: Trying to access array offset on value of type null in C:\xampp\htdocs\curso\php\app\components\header.php on line 8
+
+[20-Aug-2025 02:17:05 Europe/Berlin] [2025-08-20 02:17:05] Warning [2]: Undefined array key "usuario" in C:\xampp\htdocs\curso\php\app\components\header.php on line 8
+
+[20-Aug-2025 02:17:05 Europe/Berlin] [2025-08-20 02:17:05] Warning [2]: Trying to access array offset on value of type null in C:\xampp\htdocs\curso\php\app\components\header.php on line 8
+
+[20-Aug-2025 02:17:06 Europe/Berlin] [2025-08-20 02:17:06] Warning [2]: Undefined array key "usuario" in C:\xampp\htdocs\curso\php\app\components\header.php on line 8
+
+[20-Aug-2025 02:17:06 Europe/Berlin] [2025-08-20 02:17:06] Warning [2]: Trying to access array offset on value of type null in C:\xampp\htdocs\curso\php\app\components\header.php on line 8
+
+[20-Aug-2025 02:17:06 Europe/Berlin] [2025-08-20 02:17:06] Warning [2]: Undefined array key "usuario" in C:\xampp\htdocs\curso\php\app\components\header.php on line 8
+
+[20-Aug-2025 02:17:06 Europe/Berlin] [2025-08-20 02:17:06] Warning [2]: Trying to access array offset on value of type null in C:\xampp\htdocs\curso\php\app\components\header.php on line 8
+
+[20-Aug-2025 02:17:06 Europe/Berlin] [2025-08-20 02:17:06] Warning [2]: Undefined array key "usuario" in C:\xampp\htdocs\curso\php\app\components\header.php on line 8
+
+[20-Aug-2025 02:17:06 Europe/Berlin] [2025-08-20 02:17:06] Warning [2]: Trying to access array offset on value of type null in C:\xampp\htdocs\curso\php\app\components\header.php on line 8
+
+[20-Aug-2025 02:17:06 Europe/Berlin] [2025-08-20 02:17:06] Warning [2]: Undefined array key "usuario" in C:\xampp\htdocs\curso\php\app\components\header.php on line 8
+
+[20-Aug-2025 02:17:06 Europe/Berlin] [2025-08-20 02:17:06] Warning [2]: Trying to access array offset on value of type null in C:\xampp\htdocs\curso\php\app\components\header.php on line 8
+
+[20-Aug-2025 02:17:06 Europe/Berlin] [2025-08-20 02:17:06] Warning [2]: Undefined array key "usuario" in C:\xampp\htdocs\curso\php\app\components\header.php on line 8
+
+[20-Aug-2025 02:17:06 Europe/Berlin] [2025-08-20 02:17:06] Warning [2]: Trying to access array offset on value of type null in C:\xampp\htdocs\curso\php\app\components\header.php on line 8
+
+[20-Aug-2025 02:17:06 Europe/Berlin] [2025-08-20 02:17:06] Warning [2]: Undefined array key "usuario" in C:\xampp\htdocs\curso\php\app\components\header.php on line 8
+
+[20-Aug-2025 02:17:06 Europe/Berlin] [2025-08-20 02:17:06] Warning [2]: Trying to access array offset on value of type null in C:\xampp\htdocs\curso\php\app\components\header.php on line 8
+
+[20-Aug-2025 02:17:08 Europe/Berlin] [2025-08-20 02:17:08] Warning [2]: Undefined array key "usuario" in C:\xampp\htdocs\curso\php\app\components\header.php on line 8
+
+[20-Aug-2025 02:17:08 Europe/Berlin] [2025-08-20 02:17:08] Warning [2]: Trying to access array offset on value of type null in C:\xampp\htdocs\curso\php\app\components\header.php on line 8
+
+[20-Aug-2025 02:17:48 Europe/Berlin] [2025-08-20 02:17:48] Warning [2]: Undefined array key "usuario" in C:\xampp\htdocs\curso\php\app\components\header.php on line 8
+
+[20-Aug-2025 02:17:48 Europe/Berlin] [2025-08-20 02:17:48] Warning [2]: Trying to access array offset on value of type null in C:\xampp\htdocs\curso\php\app\components\header.php on line 8
+
+[20-Aug-2025 02:17:48 Europe/Berlin] [2025-08-20 02:17:48] Warning [2]: Undefined array key "usuario" in C:\xampp\htdocs\curso\php\app\components\header.php on line 8
+
+[20-Aug-2025 02:17:48 Europe/Berlin] [2025-08-20 02:17:48] Warning [2]: Trying to access array offset on value of type null in C:\xampp\htdocs\curso\php\app\components\header.php on line 8
+
+[20-Aug-2025 02:18:30 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\curso\php\app\components\header.php on line 2
+[20-Aug-2025 02:18:44 Europe/Berlin] ctrIngresoUsuario se invocó. POST=Array
+(
+    [email] => admin@admin.com
+    [contrasena] => admin
+)
+
+[20-Aug-2025 02:18:44 Europe/Berlin] Email buscado: admin@admin.com
+[20-Aug-2025 02:18:44 Europe/Berlin] Resultado SQL: Array
+(
+    [id] => 37
+    [nombre] => administrador
+    [email] => admin@admin.com
+    [contrasena] => $2y$10$B3m0d4HpjUA0aMI280flK.DIUCQsQQQDLtAQC1b2aS1SmUoC.V4bO
+    [genero] => Masculino
+    [fecha] => 19/08/2025
+)
+
+[20-Aug-2025 02:18:44 Europe/Berlin] Intentando login con: admin@admin.com
+[20-Aug-2025 02:18:44 Europe/Berlin] LOGIN OK, redirigiendo
+[20-Aug-2025 02:18:44 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\curso\php\app\components\header.php on line 2
+[20-Aug-2025 02:27:38 Europe/Berlin] Email buscado: 37
+[20-Aug-2025 02:27:38 Europe/Berlin] Resultado SQL: Array
+(
+    [id] => 37
+    [nombre] => administrador
+    [email] => admin@admin.com
+    [contrasena] => $2y$10$B3m0d4HpjUA0aMI280flK.DIUCQsQQQDLtAQC1b2aS1SmUoC.V4bO
+    [genero] => Masculino
+    [fecha] => 19/08/2025
+)
+
+[20-Aug-2025 02:27:42 Europe/Berlin] Email buscado: 37
+[20-Aug-2025 02:27:42 Europe/Berlin] Resultado SQL: Array
+(
+    [id] => 37
+    [nombre] => administrador
+    [email] => admin@admin.com
+    [contrasena] => $2y$10$B3m0d4HpjUA0aMI280flK.DIUCQsQQQDLtAQC1b2aS1SmUoC.V4bO
+    [genero] => Masculino
+    [fecha] => 19/08/2025
+)
+
+[22-Aug-2025 00:58:49 Europe/Berlin] [2025-08-22 00:58:49] Warning [2]: include(./vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 00:58:49 Europe/Berlin] [2025-08-22 00:58:49] Warning [2]: include(): Failed opening './vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 00:58:50 Europe/Berlin] [2025-08-22 00:58:50] Warning [2]: include(./vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 00:58:50 Europe/Berlin] [2025-08-22 00:58:50] Warning [2]: include(): Failed opening './vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 00:59:06 Europe/Berlin] [2025-08-22 00:59:06] Warning [2]: include(../vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 00:59:06 Europe/Berlin] [2025-08-22 00:59:06] Warning [2]: include(): Failed opening '../vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 00:59:12 Europe/Berlin] [2025-08-22 00:59:12] Warning [2]: include(../../vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 00:59:12 Europe/Berlin] [2025-08-22 00:59:12] Warning [2]: include(): Failed opening '../../vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 00:59:23 Europe/Berlin] [2025-08-22 00:59:23] Warning [2]: include(.app/vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 00:59:23 Europe/Berlin] [2025-08-22 00:59:23] Warning [2]: include(): Failed opening '.app/vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 00:59:27 Europe/Berlin] [2025-08-22 00:59:27] Warning [2]: include(.app/vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 00:59:27 Europe/Berlin] [2025-08-22 00:59:27] Warning [2]: include(): Failed opening '.app/vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 00:59:42 Europe/Berlin] [2025-08-22 00:59:42] Warning [2]: include(.//vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 00:59:42 Europe/Berlin] [2025-08-22 00:59:42] Warning [2]: include(): Failed opening './/vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 00:59:48 Europe/Berlin] [2025-08-22 00:59:48] Warning [2]: include(./vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 00:59:48 Europe/Berlin] [2025-08-22 00:59:48] Warning [2]: include(): Failed opening './vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 00:59:49 Europe/Berlin] [2025-08-22 00:59:49] Warning [2]: include(./vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 00:59:49 Europe/Berlin] [2025-08-22 00:59:49] Warning [2]: include(): Failed opening './vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 00:59:49 Europe/Berlin] [2025-08-22 00:59:49] Warning [2]: include(./vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 00:59:49 Europe/Berlin] [2025-08-22 00:59:49] Warning [2]: include(): Failed opening './vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 00:59:49 Europe/Berlin] [2025-08-22 00:59:49] Warning [2]: include(./vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 00:59:49 Europe/Berlin] [2025-08-22 00:59:49] Warning [2]: include(): Failed opening './vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 00:59:49 Europe/Berlin] [2025-08-22 00:59:49] Warning [2]: include(./vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 00:59:49 Europe/Berlin] [2025-08-22 00:59:49] Warning [2]: include(): Failed opening './vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 00:59:50 Europe/Berlin] [2025-08-22 00:59:50] Warning [2]: include(./vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 00:59:50 Europe/Berlin] [2025-08-22 00:59:50] Warning [2]: include(): Failed opening './vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 00:59:50 Europe/Berlin] [2025-08-22 00:59:50] Warning [2]: include(./vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 00:59:50 Europe/Berlin] [2025-08-22 00:59:50] Warning [2]: include(): Failed opening './vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 00:59:50 Europe/Berlin] [2025-08-22 00:59:50] Warning [2]: include(./vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 00:59:50 Europe/Berlin] [2025-08-22 00:59:50] Warning [2]: include(): Failed opening './vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 00:59:50 Europe/Berlin] [2025-08-22 00:59:50] Warning [2]: include(./vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 00:59:50 Europe/Berlin] [2025-08-22 00:59:50] Warning [2]: include(): Failed opening './vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 01:00:00 Europe/Berlin] [2025-08-22 01:00:00] Warning [2]: include(./../vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 01:00:00 Europe/Berlin] [2025-08-22 01:00:00] Warning [2]: include(): Failed opening './../vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 01:00:02 Europe/Berlin] [2025-08-22 01:00:02] Warning [2]: include(././vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 01:00:02 Europe/Berlin] [2025-08-22 01:00:02] Warning [2]: include(): Failed opening '././vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 01:00:18 Europe/Berlin] [2025-08-22 01:00:18] Warning [2]: include(../vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 01:00:18 Europe/Berlin] [2025-08-22 01:00:18] Warning [2]: include(): Failed opening '../vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 01:00:19 Europe/Berlin] [2025-08-22 01:00:19] Warning [2]: include(../vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 01:00:19 Europe/Berlin] [2025-08-22 01:00:19] Warning [2]: include(): Failed opening '../vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 01:00:19 Europe/Berlin] [2025-08-22 01:00:19] Warning [2]: include(../vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 01:00:19 Europe/Berlin] [2025-08-22 01:00:19] Warning [2]: include(): Failed opening '../vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 01:00:19 Europe/Berlin] [2025-08-22 01:00:19] Warning [2]: include(../vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 01:00:19 Europe/Berlin] [2025-08-22 01:00:19] Warning [2]: include(): Failed opening '../vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 01:00:19 Europe/Berlin] [2025-08-22 01:00:19] Warning [2]: include(../vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 01:00:19 Europe/Berlin] [2025-08-22 01:00:19] Warning [2]: include(): Failed opening '../vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 01:00:19 Europe/Berlin] [2025-08-22 01:00:19] Warning [2]: include(../vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 01:00:19 Europe/Berlin] [2025-08-22 01:00:19] Warning [2]: include(): Failed opening '../vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 01:00:20 Europe/Berlin] [2025-08-22 01:00:20] Warning [2]: include(../vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 01:00:20 Europe/Berlin] [2025-08-22 01:00:20] Warning [2]: include(): Failed opening '../vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 01:00:20 Europe/Berlin] [2025-08-22 01:00:20] Warning [2]: include(../vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 01:00:20 Europe/Berlin] [2025-08-22 01:00:20] Warning [2]: include(): Failed opening '../vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 01:00:20 Europe/Berlin] [2025-08-22 01:00:20] Warning [2]: include(../vistas/plantilla.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 01:00:20 Europe/Berlin] [2025-08-22 01:00:20] Warning [2]: include(): Failed opening '../vistas/plantilla.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php on line 6
+
+[22-Aug-2025 01:16:12 Europe/Berlin] ctrIngresoUsuario se invocó. POST=Array
+(
+    [email] => admin@admin.com
+    [contrasena] => admin
+)
+
+[22-Aug-2025 01:16:12 Europe/Berlin] Email buscado: admin@admin.com
+[22-Aug-2025 01:16:12 Europe/Berlin] Resultado SQL: Array
+(
+    [id] => 37
+    [nombre] => administrador
+    [email] => admin@admin.com
+    [contrasena] => $2y$10$B3m0d4HpjUA0aMI280flK.DIUCQsQQQDLtAQC1b2aS1SmUoC.V4bO
+    [genero] => Masculino
+    [fecha] => 19/08/2025
+)
+
+[22-Aug-2025 01:16:12 Europe/Berlin] Intentando login con: admin@admin.com
+[22-Aug-2025 01:16:12 Europe/Berlin] LOGIN OK, redirigiendo
+[22-Aug-2025 01:16:30 Europe/Berlin] Email buscado: 37
+[22-Aug-2025 01:16:30 Europe/Berlin] Resultado SQL: Array
+(
+    [id] => 37
+    [nombre] => administrador
+    [email] => admin@admin.com
+    [contrasena] => $2y$10$B3m0d4HpjUA0aMI280flK.DIUCQsQQQDLtAQC1b2aS1SmUoC.V4bO
+    [genero] => Masculino
+    [fecha] => 19/08/2025
+)
+
+[22-Aug-2025 01:16:35 Europe/Berlin] Email buscado: 38
+[22-Aug-2025 01:16:35 Europe/Berlin] Resultado SQL: Array
+(
+    [id] => 38
+    [nombre] => Ginos
+    [email] => pacosssypela2017@hotmail.com
+    [contrasena] => $2y$10$xDyUfx7yw7HaMsYFkR7.me4y70GqEQB33bHBUHLKrYVYLocI0jhwG
+    [genero] => Masculino
+    [fecha] => 18/08/2025
+)
+
+[22-Aug-2025 01:16:39 Europe/Berlin] Email buscado: 6
+[22-Aug-2025 01:16:39 Europe/Berlin] Resultado SQL: 
+[22-Aug-2025 01:16:44 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '6 WHERE id = 0' at line 1 in C:\xampp\htdocs\curso\php\app\modelos\formularios.modelo.php:113
+Stack trace:
+#0 C:\xampp\htdocs\curso\php\app\modelos\formularios.modelo.php(113): PDOStatement->execute()
+#1 C:\xampp\htdocs\curso\php\app\controladores\formularios.controlador.php(104): ModeloFormularios::mdlEliminarRegistro('registro', '6')
+#2 C:\xampp\htdocs\curso\php\app\vistas\paginas\productos.php(175): ControladorFormularios::ctrEliminarUsuario()
+#3 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(33): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\curso\php\index.php(14): ControladorPlantilla->ctrGetPlantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\curso\php\app\modelos\formularios.modelo.php on line 113
+[22-Aug-2025 02:22:04 Europe/Berlin] ctrIngresoUsuario se invocó. POST=Array
+(
+    [email] => admin@admin.com
+    [contrasena] => admin
+)
+
+[22-Aug-2025 02:22:04 Europe/Berlin] Email buscado: admin@admin.com
+[22-Aug-2025 02:22:04 Europe/Berlin] Resultado SQL: Array
+(
+    [id] => 37
+    [nombre] => administrador
+    [email] => admin@admin.com
+    [contrasena] => $2y$10$B3m0d4HpjUA0aMI280flK.DIUCQsQQQDLtAQC1b2aS1SmUoC.V4bO
+    [genero] => Masculino
+    [fecha] => 19/08/2025
+)
+
+[22-Aug-2025 02:22:04 Europe/Berlin] Intentando login con: admin@admin.com
+[22-Aug-2025 02:22:04 Europe/Berlin] LOGIN OK, redirigiendo
+[22-Aug-2025 02:22:53 Europe/Berlin] ctrIngresoUsuario se invocó. POST=Array
+(
+    [email] => admin@admin.com
+    [contrasena] => adawd
+)
+
+[22-Aug-2025 02:22:53 Europe/Berlin] Email buscado: admin@admin.com
+[22-Aug-2025 02:22:53 Europe/Berlin] Resultado SQL: Array
+(
+    [id] => 37
+    [nombre] => administrador
+    [email] => admin@admin.com
+    [contrasena] => $2y$10$B3m0d4HpjUA0aMI280flK.DIUCQsQQQDLtAQC1b2aS1SmUoC.V4bO
+    [genero] => Masculino
+    [fecha] => 19/08/2025
+)
+
+[22-Aug-2025 02:22:53 Europe/Berlin] Intentando login con: admin@admin.com
+[22-Aug-2025 02:22:53 Europe/Berlin] LOGIN FALLÓ
+[22-Aug-2025 02:29:02 Europe/Berlin] [2025-08-22 02:29:02] Warning [2]: Undefined array key "error_message" in C:\xampp\htdocs\curso\php\app\vistas\paginas\registro.php on line 43
+
+[22-Aug-2025 02:29:05 Europe/Berlin] [2025-08-22 02:29:05] Warning [2]: Undefined array key "error_message" in C:\xampp\htdocs\curso\php\app\vistas\paginas\registro.php on line 43
+
+[22-Aug-2025 04:04:52 Europe/Berlin] ctrIngresoUsuario se invocó. POST=Array
+(
+    [email] => admin@admin.com
+    [contrasena] => admin
+)
+
+[22-Aug-2025 04:04:52 Europe/Berlin] Email buscado: admin@admin.com
+[22-Aug-2025 04:04:52 Europe/Berlin] Resultado SQL: Array
+(
+    [id] => 37
+    [nombre] => administrador
+    [email] => admin@admin.com
+    [contrasena] => $2y$10$B3m0d4HpjUA0aMI280flK.DIUCQsQQQDLtAQC1b2aS1SmUoC.V4bO
+    [genero] => Masculino
+    [fecha] => 19/08/2025
+)
+
+[22-Aug-2025 04:04:52 Europe/Berlin] Intentando login con: admin@admin.com
+[22-Aug-2025 04:04:52 Europe/Berlin] LOGIN OK, redirigiendo
+[22-Aug-2025 04:11:05 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '4 WHERE id = 0' at line 1 in C:\xampp\htdocs\curso\php\app\modelos\formularios.modelo.php:113
+Stack trace:
+#0 C:\xampp\htdocs\curso\php\app\modelos\formularios.modelo.php(113): PDOStatement->execute()
+#1 C:\xampp\htdocs\curso\php\app\controladores\formularios.controlador.php(101): ModeloFormularios::mdlEliminarRegistro('registro', '4')
+#2 C:\xampp\htdocs\curso\php\app\vistas\paginas\productos.php(175): ControladorFormularios::ctrEliminarUsuario()
+#3 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(33): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\curso\php\index.php(14): ControladorPlantilla->ctrGetPlantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\curso\php\app\modelos\formularios.modelo.php on line 113
+[22-Aug-2025 04:11:07 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '8 WHERE id = 0' at line 1 in C:\xampp\htdocs\curso\php\app\modelos\formularios.modelo.php:113
+Stack trace:
+#0 C:\xampp\htdocs\curso\php\app\modelos\formularios.modelo.php(113): PDOStatement->execute()
+#1 C:\xampp\htdocs\curso\php\app\controladores\formularios.controlador.php(101): ModeloFormularios::mdlEliminarRegistro('registro', '8')
+#2 C:\xampp\htdocs\curso\php\app\vistas\paginas\productos.php(175): ControladorFormularios::ctrEliminarUsuario()
+#3 C:\xampp\htdocs\curso\php\app\vistas\plantilla.php(33): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\curso\php\app\controladores\plantilla.controlador.php(6): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\curso\php\index.php(14): ControladorPlantilla->ctrGetPlantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\curso\php\app\modelos\formularios.modelo.php on line 113

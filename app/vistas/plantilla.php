@@ -42,5 +42,7 @@
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
     </script>
 </body>
-
+<script src="./app/vistas/js/script.js"></script>
+<script src="./app/vistas/js/Pass.js"></script>
+<script src="./app/vistas/js/active-link.js"></script>
 </html>

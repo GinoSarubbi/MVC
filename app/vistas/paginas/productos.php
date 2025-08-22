@@ -23,6 +23,7 @@
         background-color: #2c8cecff;
         color: #fff;
     }
+
     .card-stats {
         border: .2px solid #f0f0f0ff;
         border-radius: .5rem;
@@ -33,6 +34,7 @@
     .card-stats:hover {
         transform: translateY(-4px);
     }
+
     @media (max-width: 767px) {
         header h1 {
             font-size: 1.25rem;
@@ -93,7 +95,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="card card-stats bg-white">
                         <div class="card-body">
@@ -106,7 +108,7 @@
                             </div>
                         </div>
                     </div>
-                </div>  
+                </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="card card-stats bg-white">
                         <div class="card-body">
@@ -119,25 +121,32 @@
                             </div>
                         </div>
                     </div>
-                </div>  
-                    <div class="col-12 col-md-6 col-lg-3">
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
                     <div class="card card-stats bg-white">
                         <div class="card-body">
                             <div class="d-flex justify-content-between align-items-center">
-                                <div>
+                                <div class="d-flex flex-column">
                                     <h6 class="card-title mb-1">Lista de Productos Bajo Stock</h6>
-                                    <span class="mb-0"><?= !empty($listaBajos) ? implode(', ', array_map(fn($p) => htmlspecialchars($p['nombre']), $listaBajos)) : 'Ninguno' ?></span>
+                                    <span class="mb-0"><?= !empty($listaBajos) ? implode(',', array_map(fn($p) => htmlspecialchars($p['nombre']), $listaBajos)) : 'Ninguno' ?></span>
                                 </div>
                                 <i class="bi bi-list fs-1 text-info responsive-icon"></i>
                             </div>
                         </div>
                     </div>
-                </div>  
+                </div>
             </div>
 
             <div class="table-responsive mt-3 p-4">
+
                 <table class="table table-striped table-hover caption-top text-center table-bordered">
-                    <caption class="text-start small mb-1">Lista de productos</caption>
+                    <div class="d-flex justify-content-between align-items-center mb-3 flex-row">
+                        <h3 class="text-start  mb-1 text-secondary">Lista de productos</h3>
+                        <button type="button" class="btn btn-success " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Agregar Producto
+                        </button>
+                    </div>
+
                     <thead class="text-uppercase align-middle fw-semibold text-white bg-secondary">
                         <tr>
                             <th scope="col">#</th>
@@ -157,7 +166,7 @@
                                     <td><?= htmlspecialchars($producto['precio']) ?></td>
                                     <td><?= htmlspecialchars($producto['stock']) ?></td>
                                     <td><?= htmlspecialchars($producto['estado']) ?></td>
-                                    <td class="d-flex gap-4 justify-content-center"><a href="index.php?ruta=editar&id=<?php echo $producto["id"]; ?>" class="btn btn-primary">Editar</a>
+                                    <td class="d-flex gap-4 justify-content-center">
                                         <form method="POST">
                                             <input type="hidden" value="<?php echo $producto["id"] ?>" name="eliminarRegistro">
                                             <button class="btn btn-danger" type="submit">Eliminar</button>
@@ -166,10 +175,48 @@
                                             $eliminar->ctrEliminarUsuario();
                                             ?>
                                         </form>
+
                                     </td>
 
                                 </tr>
                             <?php endforeach; ?>
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Modal title</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body justify-content-center align-center">
+                                            <form method="POST" action="index.php?ruta=productos">
+                                                <div class="mb-3">
+                                                    <label for="nombreProducto" class="form-label text-black">Nombre del Producto</label>
+                                                    <input type="text" class="form-control" id="nombreProducto" name="nombreProducto" required>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="precioProducto" class="form-label text-black">Precio del Producto</label>
+                                                    <input type="number" class="form-control" id="precioProducto" name="precioProducto" required>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="stockProducto" class="form-label text-black">Stock del Producto</label>
+                                                    <input type="number" class="form-control" id="stockProducto" name="stockProducto" required>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="estadoProducto" class="form-label text-black">Estado del Producto</label>
+                                                    <select class="form-select" id="estadoProducto" name="estadoProducto" required>
+                                                        <option value="activo">Activo</option>
+                                                        <option value="inactivo">Inactivo</option>
+                                                    </select>
+                                                </div>
+                                                <div class="d-flex justify-content-center align-center">
+                                                    <button type="submit" class="btn btn-success" style="width: 500px;">Agregar Producto</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         <?php else: ?>
                             <tr>
                                 <td colspan="5" class="text-center py-3">No hay productos registrados.</td>

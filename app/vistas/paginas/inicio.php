@@ -82,7 +82,7 @@
                 $total = count($usuarios);
 
                 $productos = ControladorFormularios::ctrSeleccionarProductos(null, null);
-                $total = count($productos);
+                $totalProdu = count($productos);
 
                 $valorInventario = ControladorFormularios::ctrValorInventarioProductos();
                 $valorInventarioFmt = number_format($valorInventario, 2, ',', '.');
@@ -122,7 +122,7 @@
                             <div class="d-flex justify-content-between align-items-center">
                                 <div>
                                     <h6 class="card-title mb-1">Total Productos</h6>
-                                    <h3 class="mb-0"><?= $total ?></h3>
+                                    <h3 class="mb-0"><?= $totalProdu ?></h3>
                                 </div>
                                 <i class="bi bi-cart2 fs-1 text-danger responsive-icon"></i>
                             </div>

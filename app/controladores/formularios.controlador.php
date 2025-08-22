@@ -14,9 +14,6 @@ class ControladorFormularios
 
             $respuesta = ModeloFormularios::mdlRegistro($tabla, $datos);
 
-            if ($respuesta === "existe") {
-                $_SESSION["error_message"] = "Ese email ya está registrado.";
-            }
             if ($respuesta === "ok") {
                 // Redirige al login
                 header("Location: index.php?ruta=ingreso");
